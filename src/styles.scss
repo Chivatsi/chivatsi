@@ -1,1 +1,42 @@
 /* You can add global styles to this file, and also import other style files */
+
+$primary:#ff5a5f;
+$secondary:#484848;
+$modal-fade-transform: scale(.8);
+
+@import "~bootstrap/scss/bootstrap";
+
+body {
+    background-color: #fafafa;
+}
+:root {
+    --color-white: #ffffff;
+    --color-text-black: #2c2c2c;
+    --color-purple: #562af0;
+    --color-bg-black: #141418;
+    --color-text-gold: #fdad00;
+}
+
+#partners {
+    .slider-image {
+        min-width: 20% !important;
+    }
+
+    .carousel-wrapper {
+        padding-left: 10vw;
+        margin-top: -4vh;
+    }
+}
+
+#tools {
+    .slider-image {
+        width: 0% !important;
+    }
+
+    .carousel-wrapper {
+        padding-left: 10vw;
+        padding-right: 10vw;
+        margin-top: -4vh;
+    }
+
+}

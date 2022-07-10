@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="105" height="29" viewBox="0 0 105 29">
+  <g id="Group_6" data-name="Group 6" transform="translate(-0.48 0.443)">
+    <g id="Rectangle_8" data-name="Rectangle 8" transform="translate(0.48 -0.443)" fill="rgba(86,42,240,0)" stroke="#562af0" stroke-width="1">
+      <rect width="105" height="29" rx="8" stroke="none"/>
+      <rect x="0.5" y="0.5" width="104" height="28" rx="7.5" fill="none"/>
+    </g>
+    <text id="View_Case_Study" data-name="View Case Study" transform="translate(9.48 17.556)" fill="#2c2c2c" font-size="10" font-family="Prompt-SemiBold, Prompt" font-weight="600"><tspan x="0" y="0">View Case Study</tspan></text>
+  </g>
+</svg>

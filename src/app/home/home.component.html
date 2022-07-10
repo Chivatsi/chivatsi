@@ -1,0 +1,143 @@
+<div>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <div class="hero-left-layout">
+        <p class="description-sub-text">
+            I’m Ali Chivatsi Dennis - a multidisciplinary visual designer based in Kenya specialized in UI/UX Design, Graphic Design and Front-end web and mobile development
+        </p>
+        <h3 class="description-text">Designing Intuitive Interfaces that users love to use.</h3>
+        <button class="btn-default">Get In Touch</button>
+    </div>
+
+    <div class="hero-right-layout">
+        <div class="card">
+        </div>
+
+        <img class = "hero-image" src="../../assets/images/wavvy-wallet-hero.svg" alt="">
+
+    </div>
+  </div>
+
+  <!-- Services Section -->
+  <div class="services">
+    <p class="services-sub-text">Here are some projects I have worked on</p>
+
+    <div class="service-cards">
+      <div class="s-card">
+        <div class="s-content">
+          <img class = "s-image" src="../../assets/images/wavvy.svg" alt="">
+          <div class = "s-footer">
+            <p class="s-footer-title">Wavvy Wallet</p>
+            <button class="s-footer-button">View Case Study</button>
+          </div>
+        </div>
+      </div>
+      <div class="s-card">
+        <div class="s-content">
+          <img class = "s-image" src="../../assets/images/chuo-card.svg" alt="">
+          <div class = "s-footer">
+            <p class="s-footer-title">Chuo</p>
+            <button class="s-footer-button">View Case Study</button>
+          </div>
+        </div>
+      </div>
+      <div class="s-card">
+        <div class="s-content">
+          <img class = "s-image" src="../../assets/images/onekana.svg" alt="">
+          <div class = "s-footer">
+            <p class="s-footer-title">Onekana</p>
+            <button class="s-footer-button">View Case Study</button>
+          </div>
+        </div>
+      </div>
+      <div class="s-card">
+        <div class="s-content">
+          <img class = "s-image" src="../../assets/images/stories-from-around.svg" alt="">
+          <div class = "s-footer">
+            <p class="s-footer-title">Stories From Around</p>
+            <button class="s-footer-button">View Case Study</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="btn-small">More Projects</button>
+  </div>
+
+  <!-- Previously worked with -->
+  <div class="work">
+    <p class="services-sub-text work-sub-text">Previously worked with</p>
+    <p class="work-text">Here are some amazing brands I have worked with on their app, website and frontend development</p>
+
+    <lib-carousel id="partners"
+      [sliderItems]="partnersCarousel" 
+      [sliderOptions]="partnersOptions"
+      [slidesToShow] = 4
+      [autoSlide]="true"
+      [slideInterval]="2000">
+    </lib-carousel>
+
+  </div>
+
+  <!-- Services I can help with -->
+  <div class="my-services">
+    <p class="services-sub-text work-sub-text my-services-sub-text">Services I can help you with</p>
+    <p class="work-text my-services-text">Over the last 5 years, I have worked with businesses to develop their brands and unique identity through graphic design, UI/UX design and front-end software development</p>
+
+    <div class="service-list">
+     <div class="service">
+      <img src="../../assets/images/wavvy-service.svg" alt="" class="service-image">
+      <div class="service-text">
+        <p class="service-text-1">Mobile App (UI/UX) Design</p>
+        <p class="service-number">01</p>
+      </div>
+      <p class="service-text-2">I enjoy creating mobile interfaces and developing mobile applications that fit well with the client’s needs and requirements. From prototyping to development of the final product.</p>
+     </div>
+
+     <div class="service">
+      <img src="../../assets/images/web-design.svg" alt="" class="service-image">
+      <div class="service-text">
+        <p class="service-text-1">Website Design</p>
+        <p class="service-number">02</p>
+      </div>
+      <p class="service-text-2">Web design has been my passion for almost a decade now. From minimalistic to complex Interface designs that follow design principles making them intuitive and user-friendly.</p>
+     </div>
+
+     <div class="service">
+      <img src="../../assets/images/wavvy-wallet-logo.svg" alt="" class="service-image">
+      <div class="service-text">
+        <p class="service-text-1">Graphic Design</p>
+        <p class="service-number">03</p>
+      </div>
+      <p class="service-text-2">In my extra time, I design logos, flyers, posters, Infographics that communicate the client’s brand position and delivers a message in the most impactful way possible.</p>
+     </div>
+
+    </div>
+  </div>
+
+  <!-- My Tools -->
+  <div class="tools">
+    <p class="services-sub-text work-sub-text my-services-sub-text">My Tools</p>
+    <p class="work-text my-services-text">What is a workman without his tools</p>
+
+    <lib-carousel id="tools"
+    [sliderItems]="toolsCarousel" 
+    [sliderOptions]="toolsOptions"
+    [slidesToShow] = 7
+    [autoSlide]="false">
+  </lib-carousel>
+  </div>
+
+  <!-- Reach Me -->
+  <div class="social">
+    <p class="find-me">You can find me on</p>
+    <p class="social-wrapper"><a href="" class="social-links">LinkedIn, </a><a href="" class="social-links">Instagram, </a><a href="" class="social-links">Behance</a></p>
+    <button class="btn-small btn-footer">Get In Touch</button>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p class="terms">Terms and Conditions | Privacy Policy</p>
+    <p class="site-info">2022 © Designed and Developed by Ali Chivatsi Dennis</p>
+  </div>
+</div>
