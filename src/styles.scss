@@ -17,13 +17,14 @@ body {
     --color-text-gold: #fdad00;
 }
 
-#partners {
-    .slider-image {
-        min-width: 20% !important;
-    }
 
+#partners {
+
+    .sisitech .slider-img {
+        max-width: 80% !important;
+    }
+    
     .carousel-wrapper {
-        padding-left: 10vw;
         margin-top: -4vh;
     }
 }

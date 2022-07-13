@@ -54,15 +54,15 @@ export class HomeComponent implements OnInit {
       id: '1',
       link: "",
       img: "../../assets/images/adobe-illustrator.svg",
-      alt: "c4dlab",
-      class: "c4dlab"
+      alt: "illustrator",
+      class: "illustrator"
     },
     {
       id: '2',
       link: "",
       img: "../../assets/images/zeplin.svg",
-      alt: "teb",
-      class: "teb"
+      alt: "zeplin",
+      class: "zeplin"
     },
     {
       id: '3',
@@ -75,22 +75,22 @@ export class HomeComponent implements OnInit {
       id: '4',
       link: "",
       img: "../../assets/images/angular.svg",
-      alt: "ujam",
-      class: "ujam"
+      alt: "angular",
+      class: "angular"
     },
     {
       id: '5',
       link: "",
       img: "../../assets/images/flutter.svg",
-      alt: "ujam",
-      class: "ujam"
+      alt: "flutter",
+      class: "flutter"
     },
     {
       id: '6',
       link: "",
       img: "../../assets/images/ionic.svg",
-      alt: "ujam",
-      class: "ujam"
+      alt: "ionic",
+      class: "ionic"
     }
   ]
 
