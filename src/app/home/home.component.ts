@@ -40,6 +40,39 @@ export class HomeComponent implements OnInit {
     }
   ]
 
+  heroOptions = ['id', 'img', 'alt', 'class', 'link'];
+
+  heroCarousel: any = [
+    {
+      id: '0',
+      link: "",
+      img: "../../assets/images/wavvy-wallet-hero.svg",
+      alt: "wavvy-wallet",
+      class: "wavvy-wallet"
+    },
+    {
+      id: '1',
+      link: "",
+      img: "../../assets/images/chuo.svg",
+      alt: "chuo",
+      class: "chuo"
+    },
+    {
+      id: '2',
+      link: "",
+      img: "../../assets/images/onekana-hero.svg",
+      alt: "onekana-hero",
+      class: "onekana-hero"
+    },
+    {
+      id: '3',
+      link: "",
+      img: "../../assets/images/sfa.svg",
+      alt: "sfa",
+      class: "sfa"
+    }
+  ]
+
   toolsOptions = ['id', 'img', 'alt', 'class', 'link'];
 
   toolsCarousel: any = [
@@ -68,8 +101,8 @@ export class HomeComponent implements OnInit {
       id: '3',
       link: "",
       img: "../../assets/images/sketch.svg",
-      alt: "ujam",
-      class: "ujam"
+      alt: "sketch",
+      class: "sketch"
     },
     {
       id: '4',

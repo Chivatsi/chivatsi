@@ -17,21 +17,107 @@ body {
     --color-text-gold: #fdad00;
 }
 
+@media only screen and (min-device-width: 300px) and (max-device-width: 600px) {
+    #partners .carousel-container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-columns: 0%;
+        margin-top: 7vh;
+        padding-bottom: 5vh;
+        justify-items: center;
+    }
+
+    #partners .item-active {
+        padding-left: 7vw !important;
+    }
+
+}
 
 #partners {
 
     .sisitech .slider-img {
         max-width: 80% !important;
     }
-    
+
+    .c4dlab .slider-img {
+        max-width: 90% !important;
+    }
+
+    .teb .slider-img {
+        max-width: 90% !important;
+        margin-top: -1vh !important;
+    }
+
+    .ujam .slider-img {
+        max-width: 90% !important;
+        margin-top: 1vh !important;
+    }
+
     .carousel-wrapper {
         margin-top: -4vh;
     }
 }
 
+@media only screen and (min-device-width: 300px) and (max-device-width: 600px) {
+    #tools .carousel-wrapper {
+        margin-top: 5px !important;
+        margin-left: 65px !important;
+    } 
+
+    #tools .flutter .slider-img {
+        width: 50px !important;
+        margin-left: 0px !important;
+    }
+
+    #tools .carousel-container {
+        grid-auto-columns: 0%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
 #tools {
-    .slider-image {
-        width: 0% !important;
+
+    .carousel-container {
+        margin-bottom: 0px;
+    }
+
+    .adobe-xd .slider-img {
+        width: 30% !important;
+        transform: scale(0.8);
+    }
+
+    .illustrator .slider-img {
+        width: 30% !important;
+        transform: scale(0.8);
+    }
+
+    .zeplin .slider-img {
+        width: 50% !important;
+        transform: scale(0.8);
+    }
+
+    .sketch .slider-img {
+        width: 40% !important;
+        transform: scale(0.8);
+    }
+
+    .angular .slider-img {
+        width: 40% !important;
+        transform: scale(0.8);
+    }
+
+    .flutter .slider-img {
+        width: 50px !important;
+        transform: scale(0.8);
+        margin-left: 20px;
+    }
+
+    .ionic .slider-img {
+        width: 30% !important;
+        transform: scale(0.8);
+    }
+
+    .item-active {
+        justify-content: left !important;
     }
 
     .carousel-wrapper {
@@ -39,5 +125,40 @@ body {
         padding-right: 10vw;
         margin-top: -4vh;
     }
+}
 
+.hero-carousel {
+    width: 100%;
+}
+
+@media only screen and (min-device-width: 300px) and (max-device-width: 600px) {
+
+    #hero .carousel-container {
+        grid-auto-columns: 0px;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100vw;
+        padding-top: 0px !important;
+    }
+
+    #hero .item-active {
+        padding-left: 0px !important;
+    }
+}
+
+#hero {
+
+    .carousel-container {
+        padding-right: 5px;
+    }
+
+    .wavvy-wallet, .chuo, .onekana-hero, .sfa {
+        .slider-img {
+            width: 800px;
+            height: 700px;
+            margin-top: -10vh;
+            margin-left: -1vw;
+            border-radius: 12px;
+            padding-top: 80px;
+        }
+    } 
 }

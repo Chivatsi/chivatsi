@@ -6,16 +6,22 @@
         <p class="description-sub-text">
             I’m Ali Chivatsi Dennis - a multidisciplinary visual designer based in Kenya specialized in UI/UX Design, Graphic Design and Front-end web and mobile development
         </p>
-        <h3 class="description-text">Designing Intuitive Interfaces that users love to use.</h3>
+        <h3 class="description-text">Designing Intuitive Interfaces that users love to use</h3>
         <button class="btn-default">Get In Touch</button>
     </div>
 
     <div class="hero-right-layout">
         <div class="card">
         </div>
-
-        <img class = "hero-image" src="../../assets/images/wavvy-wallet-hero.svg" alt="">
-
+        <div class="hero-carousel">
+          <lib-carousel id="hero"
+          [sliderItems]="heroCarousel" 
+          [sliderOptions]="heroOptions"
+          [slidesToShow] = 1
+          [autoSlide]="true"
+          [slideInterval]="1800">
+        </lib-carousel>
+        </div>
     </div>
   </div>
 
@@ -73,8 +79,8 @@
       [sliderItems]="partnersCarousel" 
       [sliderOptions]="partnersOptions"
       [slidesToShow] = 4
-      [autoSlide]="false"
-      [slideInterval]="2000">
+      [autoSlide]="true"
+      [slideInterval]="1800">
     </lib-carousel>
 
   </div>
@@ -124,7 +130,8 @@
         [sliderItems]="toolsCarousel" 
         [sliderOptions]="toolsOptions"
         [slidesToShow] = 7
-        [autoSlide]="false">
+        [autoSlide]="true"
+        [slideInterval]="1500">>
       </lib-carousel>
   </div>
 
