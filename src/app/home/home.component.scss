@@ -7,6 +7,21 @@
    100% {background-color: #F6C256;}
 }
 
+.navigation-bar {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: red;
+    width: 100vw;
+    height: 10vh;
+    align-items: center;
+}
+
+.nav-links {
+    display:grid;
+    grid-template-columns: repeat( auto-fit, minmax(0.5fr, 1fr) );
+
+}
+
 .hero {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
