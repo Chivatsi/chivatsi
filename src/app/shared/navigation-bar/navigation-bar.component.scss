@@ -1,0 +1,79 @@
+@keyframes colorPulse2 {
+    0% {color: #2c2c2c;}
+    21% {color: #374395;}
+    46% {color: #F6E387;}
+    71% {color: #3086C6;}
+   96% {color: #F6C256;}
+   100% {color: #F6C256;}
+}
+
+.navbar-brand {
+    font-family: 'Prompt', sans-serif;
+    color: var(--color-text-black);
+}
+
+.nav-wrapper {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    color: var(--color-text-black);
+}
+
+.nav-link {
+    color: var(--color-text-black);
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.nav-logo-wrapper {
+    display: grid;
+    grid-template-columns: 450px 50px;
+}
+
+.social-logo-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    align-content: center;
+    margin-left: 10vw;
+}
+
+.navbar-wrapper {
+    display: grid;
+    grid-template-columns: 8fr 6fr;
+}
+
+.main-nav-wrapper {
+    box-shadow: 0px 6px 10px #00000029;
+}
+
+.nav-logo-sub-text {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.nav-logo {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.logo {
+    display: grid;
+    grid-template-columns: 50px 200px;
+    column-gap: 10px;
+}
+
+.chivatsi-logo {
+    margin-top: 10px;
+}
+
+.dropdown-item {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.dropdown-item:active {
+    background-color: var(--color-purple);
+}

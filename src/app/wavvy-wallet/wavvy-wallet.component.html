@@ -1,0 +1,75 @@
+<app-navigation-bar></app-navigation-bar>
+
+<div class="wavvy-hero">
+    <div class="wavvy-hero-section">
+        <img class = "s-image" src="../../assets/images/wavvy-wallet-sm-logo.svg" alt="">
+    </div>
+    <div class="wavvy-hero-section">
+        <h3 class="wavvy-title">Wavvy Wallet</h3>
+    </div>
+    <div class="wavvy-hero-section">
+        <h5 class="wavvy-sub-title">Automate how you track personal expenses, save for a goal <br> and manage your costs in a smart way</h5>
+    </div>
+    <div class="wavvy-hero-section wavvy-hero-image-wrapper">
+        <a>
+            <img class = "wavvy-image" src="../../assets/images/wavvy-home-export.svg">
+        </a>
+    </div>
+</div>
+
+<div class="project-background">
+    <div class="project-bg-item" *ngFor="let item of projectItems">
+        <a class="project-bg-image">
+            <img src="{{item.images}}" width="17px">
+        </a>
+        <p class="project-bg-text">{{item.text}}</p>
+
+        <div class="project-bg-wrapper">
+            <p class="project-bg-text light">{{item.description}}</p>
+            <p class="project-bg-text light">{{item.description2}}</p>
+            <p class="project-bg-text light">{{item.description3}}</p>
+            <p class="project-bg-text light">{{item.description4}}</p>
+            <p class="project-bg-text light">{{item.description5}}</p>
+        </div>
+    </div>
+</div>
+
+<div class="approach">
+    <img src="../../assets/images/approach.svg" width="50px" class="approach-logo">
+    <p class="approach-text">Approach & Process</p>
+    <div class="horizontal-line"></div>
+</div>
+
+<div class="approach-wrapper container">
+    <div class="approach-items" *ngFor="let item of approach">
+        <a class="approach-image">
+            <img src="{{item.images}}" width="50px">
+        </a>
+        <p class="approach-item-text">{{item.text}}</p>
+        <div class="approach-item-description">
+            <p class="approach-list-item">{{item.description}}</p>
+            <p class="approach-list-item">{{item.description2}}</p>
+            <p class="approach-list-item">{{item.description3}}</p>
+            <p class="approach-list-item">{{item.description4}}</p>
+            <p class="approach-list-item">{{item.description5}}</p>
+        </div>
+    </div>
+</div>
+
+<div class="challenge">
+    <h4 class="challenge-text">Our Challenge</h4>
+    <p class="challenge-description">How might we build a smart and personalized recommendation system that predicts and organizes your personal, business and group expenses providing users with informed decision making abilities about their finances?</p>
+</div>
+
+<div class="goals">
+    <h4 class="challenge-text">Project Goals</h4>
+    <p class="challenge-description">Wavvy Wallet targets different user groups i.e. personal / individuals, business and groups / chamas. These different user groups have different goals and needs.</p>
+    <p class="challenge-description more-desc"><b>Goal #1:</b>Link transactions to an account i.e. personal, business and groups.</p>
+    <p class="challenge-description more-desc"><b>Goal #2:</b>Import different transaction types from your SMS messages such as MPesa, MShwari or bank SMS messages.</p>
+    <p class="challenge-description more-desc"><b>Goal #3:</b>Auto-track expenses based on categories, sub-categories and tags.</p>
+    <p class="challenge-description more-desc"><b>Goal #4:</b>Provide direct savings / investment opportunities directly through the mobile application.</p>
+    <p class="challenge-description more-desc"><b>Goal #5:</b>Recommend targeted alternatives and suggestions to increase revenues/ reduce costs.</p>
+    <p class="challenge-description more-desc"><b>Goal #6:</b>Understand your financial position by analyzing loans and setting spending limits.</p>
+    <p class="challenge-description more-desc"><b>Goal #7:</b>Generate different user reports depending on target customers such as profit/loss statements, expense reports, spend/person and many more.</p>
+    <p class="challenge-description more-desc"><b>Goal #8:</b>Understand different user needs and create relevant, targeted marketing campaigns such as bulk SMS & social media advertising avenues.</p>
+</div>

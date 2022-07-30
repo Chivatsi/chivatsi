@@ -15,6 +15,8 @@ body {
     --color-purple: #562af0;
     --color-bg-black: #141418;
     --color-text-gold: #fdad00;
+    --color-text-blue: #3a499f;
+    --color-line: #707070;
 }
 
 @media only screen and (min-device-width: 300px) and (max-device-width: 600px) {
@@ -155,7 +157,7 @@ body {
         .slider-img {
             width: 800px;
             height: 700px;
-            margin-top: -10vh;
+            margin-top: -11vh;
             margin-left: -1vw;
             border-radius: 12px;
             padding-top: 80px;

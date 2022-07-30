@@ -1,0 +1,36 @@
+<!-- Navigation Bar -->
+<nav class="navbar navbar-light bg-light main-nav-wrapper">
+    <div class="container navbar-wrapper">
+      <a class="navbar-brand" href="/chivatsi">
+        <div class="logo">
+          <img src="../../assets/images/chivatsi-logo.svg" alt="" width="60" height="30" class="chivatsi-logo">
+          <span class="nav-logo">
+            <span>Chivatsi</span>
+            <span class="nav-logo-sub-text">UX/UI Designer</span>
+          </span>
+        </div>
+      </a>
+      <div class="nav-logo-wrapper">
+        <ul class="nav justify-content-end nav-wrapper">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">About Me</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Case Studies
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+              
+              <li *ngFor="let item of navItems"><a class="dropdown-item" href="{{item.link}}">{{item.title}}</a></li>
+            </ul>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+        <div class="social-logo-wrapper">
+          <a *ngFor="let item of socialNav" href="{{item.link}}" target="_blank"><img src="{{item.image}}" alt="" width="16" class="align-text-top"></a>
+        </div>
+      </div>
+    </div>
+</nav>

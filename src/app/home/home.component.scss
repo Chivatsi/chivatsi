@@ -7,6 +7,24 @@
    100% {background-color: #F6C256;}
 }
 
+@keyframes colorPulse2 {
+    0% {color: #2c2c2c;}
+    21% {color: #374395;}
+    46% {color: #F6E387;}
+    71% {color: #3086C6;}
+   96% {color: #F6C256;}
+   100% {color: #F6C256;}
+}
+
+@keyframes colorPulse3 {
+    0% {border-color: #2c2c2c;}
+    21% {border-color: #374395;}
+    46% {border-color: #F6E387;}
+    71% {border-color: #3086C6;}
+   96% {border-color: #F6C256;}
+   100% {border-color: #F6C256;}
+}
+
 .navigation-bar {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -71,6 +89,7 @@
     width: 35vw;
     margin-left: 10vw;
     text-align: left;
+    padding-top: 60px;
 }
 
 .description-sub-text {
@@ -102,11 +121,14 @@
     color: var(--color-white);
     box-shadow: 0px 10px 6px #00000029;
     margin-top: 4vh;
+    animation: colorPulse 7.2s infinite normal;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
 }
 
 .hero-right-layout {
     text-align: left;
-    // margin-top: 16vh;
+    padding-top: 50px;
 }
 
 .card {
@@ -146,7 +168,7 @@
 .services-sub-text {
     font-family: 'DM Sans', sans-serif;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
     margin-top: 6vh;
 }
@@ -163,7 +185,7 @@
 .service-cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    column-gap: 100px;
+    column-gap: 60px;
     margin-left: 10vw;
     margin-right: 10vw;
     margin-top: 6vh;
@@ -193,6 +215,7 @@
     background-color: var(--color-white);;
     box-shadow: 0px 10px 10px #00000029;
     border-radius: 12px;
+    cursor: pointer;
 }
 
 .s-content {
@@ -225,6 +248,9 @@
     border: 1px solid #562AF0;
     border-radius: 8px;
     margin-top: -0.5vh;
+    animation: colorPulse3 7.2s infinite normal;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
 }
 
 .btn-small {
@@ -360,15 +386,20 @@
 }
 
 .social-links {
-    color: var(--color-text-gold);
     text-decoration: none;
     font-family: 'DM Sans', sans-serif;
     font-weight: 500;
     font-size: 20px;
+    animation: colorPulse2 7.2s infinite normal;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
 }
 
 .btn-footer {
     margin-top: 4vh;
+    animation: colorPulse 7.2s infinite normal;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
 }
 
 @media only screen and (min-device-width: 300px) and (max-device-width: 600px) {
@@ -390,9 +421,8 @@
 
 .footer {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin-left: 10vw;
     margin-top: 2vh;
+    justify-content: center;
 }
 
 .terms, .site-info {
@@ -402,5 +432,23 @@
 }
 
 .site-info {
-    padding-left: 40%;
+    justify-self: center;
+}
+
+.more-projects {
+    animation: colorPulse 7.2s infinite normal;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+}
+
+.more-projects-link {
+    text-decoration: none;
+}
+
+.resume-image {
+    width: 13px;
+}
+
+.footer-btn-wrapper {
+    text-decoration: none;
 }

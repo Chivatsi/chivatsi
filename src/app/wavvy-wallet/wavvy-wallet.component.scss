@@ -1,0 +1,182 @@
+@keyframes imageScale {
+    0% {width: 100%;}
+    50% {width: 103%;}
+   100% {width: 100%;}
+}
+
+.wavvy-hero {
+    display: grid;
+    grid-template-rows: 90px 50px 70px 500px;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.s-image {
+    width: 60px;
+    height: 60px;
+    animation: imageScale 3s infinite normal;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+}
+
+.wavvy-hero-section {
+    justify-self: center;
+}
+
+.wavvy-title {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    color: var(--color-text-black);
+}
+
+.wavvy-sub-title {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: var(--color-text-blue);
+    text-align: center;
+}
+
+.wavvy-hero-image-wrapper {
+    width: 120%;
+}
+
+.wavvy-image {
+    animation: imageScale 3s infinite normal;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+}
+
+.project-background {
+    display: grid;
+    margin-top: 120px;
+    justify-content: center;
+    grid-template-columns: 300px 300px 300px;
+    row-gap: 20px;
+}
+
+.project-bg-text {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 14px; 
+    text-align: left;
+    grid-area: bgText;
+    align-self: center;
+}
+
+.project-bg-image {
+    grid-area: bgImage;
+}
+
+.light {
+    font-family: 'Prompt', sans-serif;
+    font-size: 13px; 
+    font-weight: 300;
+    grid-area: bgLight;
+}
+
+.project-bg-item {
+    display: grid;
+    grid-template-columns: 20px 200px;
+    column-gap: 10px;
+    grid-template-rows: 40px 100px;
+    justify-self: center;
+    align-self: flex-end;
+    grid-template-areas: "bgImage bgText"
+                         "bgImage  bgLight";
+}
+
+.approach {
+    display: grid;
+    grid-template-columns: 60px 200px 100px;
+    padding-left: 24vw;
+}
+
+.approach-logo {
+    align-self: center;
+}
+
+.approach-text {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 14px; 
+    align-self: flex-end;
+}
+
+.horizontal-line {
+    width: 35vw;
+    height: 0px;
+    border: 2px solid var(--color-line);
+    background-color: var(--color-line);
+    opacity: 0.5;
+    align-self: center;
+}
+
+.approach-wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, 190px);
+    margin-top: 40px;
+    padding-left: 12vw;
+}
+
+.approach-items {
+  display: grid;
+  align-content: center;
+  grid-template-rows: 50px 30px 100px;
+}
+
+.approach-image {
+    justify-self: center;
+}
+
+.approach-item-text {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    justify-self: center;
+    text-align: center;
+}
+
+.approach-item-description {
+    font-family: 'Prompt', sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    justify-self: center;
+    text-align: center;
+}
+
+.approach-list-item {
+    margin-bottom: 10px;
+}
+
+.challenge {
+    display: grid;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.goals {
+   @extend .challenge
+}
+
+.challenge-text {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    justify-self: center;
+    text-align: center;
+}
+
+.challenge-description {
+    @extend .challenge-text;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--color-text-blue);
+    width: 55%;
+}
+
+.more-desc {
+    color: var(--color-text-black);
+    width: 80%;
+}
