@@ -1,7 +1,26 @@
 @keyframes imageScale {
     0% {width: 100%;}
     50% {width: 103%;}
-   100% {width: 100%;}
+    100% {width: 100%;}
+    0% {transform: translatey(0px);}
+    50% {transform: translatey(-3px);transform: translatex(-6px);}
+    100% {transform: translatey(0px);}
+}
+
+@keyframes imageScale2 {
+    0% {transform: scale(1)}
+    100% {transform: scale(1.1)}
+}
+
+@keyframes imageTransform {
+    0% {transform: translatey(0px);}
+    50% {transform: translatey(-10px);}
+    100% {transform: translatey(0px);}
+}
+
+@keyframes imageRotate {
+    0% {transform: rotate(0turn); }
+    100% {transform: rotate(1turn); transition: transform 100ms ease-in-out;}
 }
 
 @keyframes colorPulse {
@@ -138,6 +157,9 @@
 
 .approach-image {
     justify-self: center;
+    animation: imageRotate 3s infinite normal;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
 }
 
 .approach-item-text {
@@ -247,6 +269,12 @@
     animation-delay: 0s;
 }
 
+.button-insights:hover {
+    animation: imageScale2 normal;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+}
+
 .button-insights-link {
     justify-self: center;
     text-align: center;
@@ -289,6 +317,9 @@
     font-weight: 600;
     grid-area: insight3;
     margin-top: 10px;
+    animation: imageRotate 3s infinite normal;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
 }
 
 
