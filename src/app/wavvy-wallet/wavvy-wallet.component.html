@@ -73,3 +73,66 @@
     <p class="challenge-description more-desc"><b>Goal #7:</b>Generate different user reports depending on target customers such as profit/loss statements, expense reports, spend/person and many more.</p>
     <p class="challenge-description more-desc"><b>Goal #8:</b>Understand different user needs and create relevant, targeted marketing campaigns such as bulk SMS & social media advertising avenues.</p>
 </div>
+
+<div class="insights-container">
+    <div class="insights">
+        <h4 class="learning-insights">Learning About Our Users</h4>
+        <p class="key-insights">Key Insights from User Research</p>
+        <p class="understand-insights">To learn and understand better the goals, motivations and frustrations of our users, we conducted user interviews and generated user personas to guide in collecting and analyzing the user research</p>
+        <a href="https://drive.google.com/drive/folders/1XKWsq1u4KgDXuBT3RXVLpZc-khH2eUPD?usp=sharing" target="_blank" class="button-insights-link"><button class="button-insights">View User Personas<img src="../../assets/images/arrow-right.svg" width="16px" height="10px"></button></a>
+    </div>
+
+    <div class="research" *ngFor="let item of research">
+        <p class="research-item insight1">{{item.insight1}}</p>
+        <p class="research-item insight2">{{item.insight2}}</p>
+        <img class="research-item insight3" src="{{item.insight3}}" width="40px" height="51px">
+        <p class="research-item insight4"></p>
+        <p class="research-item insight5">{{item.insight5}}</p>
+        <p class="research-item insight6">{{item.insight6}}</p>
+    </div>
+</div>
+
+<div class="visual-concept">
+    <p class="visual-concept-item title">Visual Concept</p>
+    <p class="visual-concept-item scheme">Color Scheme</p>
+    <p class="visual-concept-item audience">Our target audience is between 18 and 60 years and therefore we went with a complementary color palette in order to get the immediate attention and captivate our youthful users.</p>
+    <div class="colors-wrapper">
+        <div class="colors" *ngFor="let item of colors">
+            <img class="visual-concept-item" src="{{item.image}}" width="75px" height="75px">
+            <p class="visual-concept-item hex">{{item.hex}}</p>
+        </div>
+    </div>
+    <p class="visual-concept-item typography-title">Typography</p>
+    <div class="typography-wrapper">
+        <div class="typography" *ngFor="let item of typography">
+            <p class="visual-concept-item example1">{{item.text}}</p>
+            <p class="visual-concept-item example2">{{item.text2}}</p>
+            <p class="visual-concept-item example3">{{item.text3}}</p>
+        </div>
+
+        <div class="typography semibold" *ngFor="let item of typography">
+            <p class="visual-concept-item example1">{{item.text}}</p>
+            <p class="visual-concept-item example2">{{item.text2}}</p>
+            <p class="visual-concept-item example3">{{item.text3}}</p>
+        </div>
+
+        <div class="typography bold" *ngFor="let item of typography">
+            <p class="visual-concept-item example1">{{item.text}}</p>
+            <p class="visual-concept-item example2">{{item.text2}}</p>
+            <p class="visual-concept-item example3">{{item.text3}}</p>
+        </div>
+    </div>
+</div>
+
+<div class="prototype">
+    <h3 class="prototype-text">High Fidelity Prototype Designs</h3>
+    <lib-carousel id="prototype"
+      [sliderItems]="partnersCarousel" 
+      [sliderOptions]="partnersOptions"
+      [slidesToShow] = 5
+      [autoSlide]="true"
+      [slideInterval]="3000">
+    </lib-carousel>
+</div>
+
+<app-footer></app-footer>

@@ -1,0 +1,136 @@
+@keyframes colorPulse {
+    0% {background-color: #374395;}
+    21% {background-color: #374395;}
+    46% {background-color: #F6E387;}
+    71% {background-color: #3086C6;}
+   96% {background-color: #F6C256;}
+   100% {background-color: #F6C256;}
+}
+
+@keyframes colorPulse2 {
+    0% {color: #2c2c2c;}
+    21% {color: #374395;}
+    46% {color: #F6E387;}
+    71% {color: #3086C6;}
+   96% {color: #F6C256;}
+   100% {color: #F6C256;}
+}
+
+@keyframes colorPulse3 {
+    0% {border-color: #2c2c2c;}
+    21% {border-color: #374395;}
+    46% {border-color: #F6E387;}
+    71% {border-color: #3086C6;}
+   96% {border-color: #F6C256;}
+   100% {border-color: #F6C256;}
+}
+
+.btn-small {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    width: 200px;
+    height: 48px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--color-purple);
+    color: var(--color-white);
+    box-shadow: 0px 10px 6px #00000029;
+    display: block;
+    margin: auto;
+    margin-top: 8vh;  
+    margin-bottom: 5vh;
+}
+
+.tools {
+    background-color: var(--color-white);
+    padding-top: 1vh;
+    margin-top: 10vh;
+}
+
+.social {
+    background-color: var(--color-bg-black);
+    padding-bottom:4vh;
+}
+
+.find-me {
+    text-align: center;
+    font-family: 'Prompt', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: var(--color-white);
+    padding-top: 8vh;
+}
+
+.social-wrapper {
+    @extend .find-me;
+    padding-top: 0vh;
+}
+
+.social-links {
+    text-decoration: none;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    animation: colorPulse2 7.2s infinite normal;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+}
+
+.btn-footer {
+    margin-top: 4vh;
+    animation: colorPulse 7.2s infinite normal;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+}
+
+@media only screen and (min-device-width: 300px) and (max-device-width: 600px) {
+    .footer {
+        grid-template-columns: repeat(1, 1fr) !important;
+        margin: 10px !important;
+        font-size: 10px !important;
+        justify-items: center;
+    }
+
+    .terms {
+        margin: 10px !important;
+    }
+
+    .site-info {
+        padding-left: 0px !important;
+    }
+}
+
+.footer {
+    display: grid;
+    margin-top: 2vh;
+    justify-content: center;
+}
+
+.terms, .site-info {
+    font-family: 'Prompt', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.site-info {
+    justify-self: center;
+}
+
+.more-projects {
+    animation: colorPulse 7.2s infinite normal;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+}
+
+.more-projects-link {
+    text-decoration: none;
+}
+
+.resume-image {
+    width: 13px;
+}
+
+.footer-btn-wrapper {
+    text-decoration: none;
+}

@@ -17,6 +17,7 @@ body {
     --color-text-gold: #fdad00;
     --color-text-blue: #3a499f;
     --color-line: #707070;
+    --color-body: #fafafa;
 }
 
 @media only screen and (min-device-width: 300px) and (max-device-width: 600px) {
@@ -163,4 +164,18 @@ body {
             padding-top: 80px;
         }
     } 
+}
+
+#prototype {
+    margin-top: -60px !important;
+
+    .carousel-container {
+        margin-left:-40px;
+    }
+
+    .image {
+        .slider-img {
+            width: 100%;
+        }
+    }
 }

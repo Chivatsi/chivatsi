@@ -4,6 +4,16 @@
    100% {width: 100%;}
 }
 
+@keyframes colorPulse {
+    0% {background-color: #374395;}
+    21% {background-color: #374395;}
+    46% {background-color: #F6E387;}
+    71% {background-color: #3086C6;}
+   96% {background-color: #F6C256;}
+   100% {background-color: #F6C256;}
+}
+
+
 .wavvy-hero {
     display: grid;
     grid-template-rows: 90px 50px 70px 500px;
@@ -180,3 +190,222 @@
     color: var(--color-text-black);
     width: 80%;
 }
+
+.insights-container {
+    box-shadow: 0px 10px 10px #00000029;
+    border-radius: 10px;     
+    background-color: var(--color-purple);
+}
+
+.insights {
+    margin-top: 50px;
+    display: grid;
+    justify-content: center;
+
+}
+
+.learning-insights {
+    padding-top: 90px;
+    justify-self: center;
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--color-white);
+
+}
+
+.key-insights {
+    @extend .learning-insights;
+    font-weight: 500;
+    font-size: 14px;
+    padding-top: 0px;
+}
+
+.understand-insights {
+    @extend .learning-insights;
+    font-weight: 200;
+    font-size: 13px;
+    padding-top: 40px;
+    width: 47vw;
+}
+
+.button-insights {
+    background-color: var(--color-body);
+    border-radius: 10px;
+    border: none;
+    color: var(--color-text-blue);
+    font-family: 'Prompt', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    box-shadow: 0px 10px 10px #00000029;
+    width: 200px;
+    height: 44px;  
+    margin-top: 20px;
+    animation: imageScale 5s infinite normal;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+}
+
+.button-insights-link {
+    justify-self: center;
+    text-align: center;
+    text-decoration: none;
+}
+
+.research {
+    @extend .insights;
+    margin-top: 0;
+    padding-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    grid-template-rows: 80px 200px;
+    grid-template-areas: "insight1 insight3 insight5"
+                         "insight2 insight4 insight6";
+    text-align: left;
+}
+
+.research-item {
+    justify-self: center;
+    text-align: left;
+    color: var(--color-white);
+    font-family: 'DM Sans', sans-serif;
+}
+
+.insight1 {
+    font-size: 14px;
+    font-weight: 200;
+    grid-area: insight1;
+}
+
+.insight2 {
+    font-size: 18px;
+    font-weight: 600;
+    grid-area: insight2;
+}
+
+.insight3 {
+    font-size: 18px;
+    font-weight: 600;
+    grid-area: insight3;
+    margin-top: 10px;
+}
+
+
+.insight4 {
+    font-size: 18px;
+    font-weight: 600;
+    grid-area: insight4;
+    border: 1px dashed #D0D0D0;
+}
+
+
+.insight5 {
+    font-size: 14px;
+    font-weight: 200;
+    grid-area: insight5;
+}
+
+.insight6 {
+    font-size: 14px;
+    font-weight: 500;
+    grid-area: insight6;
+}
+
+.visual-concept {
+    @extend .insights
+}
+
+.visual-concept-item {
+    justify-self: center;
+    text-align: center;
+}
+
+.colors-wrapper {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin-top: 20px;
+}
+
+.colors {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.typography-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.typography {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    font-family: 'Montserrat' sans-serif;
+    font-weight: 500;
+}
+
+.semibold {
+    @extend .typography;
+    font-weight: 600;
+}
+
+.bold {
+    @extend .typography;
+    font-weight: 700;
+}
+
+.title {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--color-text-blue);
+}
+
+.scheme {
+    @extend .title;
+    font-size: 16px;
+    color: var(--color-text-black);
+}
+
+.audience {
+    font-family: 'Prompt', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: var(--color-text-blue);
+    width: 43vw;
+}
+
+.typography-title {
+    @extend .scheme;
+}
+
+.example1, .example2, .example3 {
+    font-size: 13px;
+    color: var(--color-text-blue);
+}
+
+.hex {
+    font-family: 'Prompt', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--color-text-blue);
+}
+
+.prototype {
+    display: grid;
+   background-color: var(--color-purple);
+   justify-content: center;
+   padding-top: 60px;
+}
+
+.prototype-text {
+    justify-self: center;
+    text-align: center;
+    color: var(--color-white);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+}
+

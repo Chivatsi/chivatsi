@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { WavvyWalletComponent } from './wavvy-wallet/wavvy-wallet.component';
 import { NavigationBarComponent } from './shared/navigation-bar/navigation-bar.component';
+import { FooterComponent } from './shared/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     WavvyWalletComponent,
-    NavigationBarComponent
+    NavigationBarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
