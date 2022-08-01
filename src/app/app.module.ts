@@ -7,6 +7,8 @@ import { HomeComponent } from './home/home.component';
 import { WavvyWalletComponent } from './wavvy-wallet/wavvy-wallet.component';
 import { NavigationBarComponent } from './shared/navigation-bar/navigation-bar.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { FooterComponent } from './shared/footer/footer.component';
     HomeComponent,
     WavvyWalletComponent,
     NavigationBarComponent,
-    FooterComponent
+    FooterComponent,
+    AboutComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

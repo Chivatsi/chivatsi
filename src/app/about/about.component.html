@@ -1,0 +1,24 @@
+<app-navigation-bar></app-navigation-bar>
+
+<div class="about">
+    <div>
+        <p class="about-title">Hello there,</p>
+        <p class="about-text">I am Ali Chivatsi Dennis - a UI/UX Designer with a demonstrated history of working in different fields in the software development space, with well-articulated design philosophies, and spearheading creative processes. <br><br> I am skilled in user research study, user stories development, prototyping, user testing, user interface design, and front-end software development focusing on web and mobile-based applications.<br><br>My friends describe me as a polymath. In addition to my love for software and technology, I double as a music producer / DJ and passionately enjoy showcasing music from Africa.</p>
+    </div>
+    <img src="../../assets/images/ali-dennis.png" width="300px" height="300px" class="about-image">
+</div>
+
+<div class="about-me">
+    <div *ngFor="let item of about">
+        <img class="about-me-image" src="{{item.image}}" width="50px" height="50px">
+        <p class="about-me-title">{{item.title}}</p>
+        <p class="about-me-text">{{item.text1}}</p>
+        <p class="about-me-text">{{item.text2}}</p>
+        <p class="about-me-text">{{item.text3}}</p>
+        <p class="about-me-text">{{item.text4}}</p>
+        <p class="about-me-text">{{item.text5}}</p>
+        <p class="about-me-text">{{item.text6}}</p>
+    </div>
+</div>
+
+<app-footer></app-footer>
