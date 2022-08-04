@@ -9,6 +9,10 @@ import { NavigationBarComponent } from './shared/navigation-bar/navigation-bar.c
 import { FooterComponent } from './shared/footer/footer.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
+import { OnekanaComponent } from './onekana/onekana.component';
+import { AllyFreshComponent } from './ally-fresh/ally-fresh.component';
+import { UpdateComponent } from './shared/update/update.component';
+import { SfaComponent } from './sfa/sfa.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +22,11 @@ import { ContactComponent } from './contact/contact.component';
     NavigationBarComponent,
     FooterComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    OnekanaComponent,
+    AllyFreshComponent,
+    UpdateComponent,
+    SfaComponent
   ],
   imports: [
     BrowserModule,
