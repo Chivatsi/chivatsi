@@ -1,6 +1,6 @@
 # Ali Chivatsi Dennis
 
-A multidisciplinary visual designer based in Kenya specialized in UI/UX Design, Graphic Design and Front-end web and mobile development
+A multidisciplinary visual designer based in Kenya specialized in UI/UX Design, Graphic Design and Front-end web and mobile development.
 
 ## Check out some case studies
 
