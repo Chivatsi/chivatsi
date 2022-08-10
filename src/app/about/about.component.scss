@@ -17,8 +17,58 @@
     grid-template-columns: 550px 400px;
     justify-content: center;
     margin-top: 80px;
+    padding-top: 80px;
     margin-bottom: 120px;
     column-gap: 150px;
+}
+
+@media only screen and (min-device-width: 300px) and (max-device-width: 600px) {
+    .about {
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+
+    .about-text-wrapper {
+        display: grid;
+        justify-content: center;
+    }
+
+    .about-title {
+        text-align: center;
+    }
+
+    .about-text {
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+    }
+
+    .about-image {
+        justify-self: center;
+    }
+
+    .about-me {
+        grid-template-columns: 1fr !important;
+    }
+
+    .about-me-wrapper {
+        display: grid;
+        justify-content: center;
+    }
+
+    .about-me-title {
+        text-align: center;
+    }
+    
+    .about-me-text {
+        text-align: center !important;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .about-me-image {
+        justify-self: center;
+    }
 }
 
 .about-title {

@@ -54,6 +54,12 @@
     padding-bottom: 30px;
 }
 
+@media only screen and (min-device-width: 300px) and (max-device-width: 600px) {
+    .talk-to-me {
+        width: 90vw;
+    }
+}
+    
 .talk-image {
     justify-self: center;
 }
