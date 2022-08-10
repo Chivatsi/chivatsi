@@ -178,6 +178,59 @@ body {
     } 
 }
 
+.onekana-carousel {
+    margin-left: 12vw;
+}
+
+#onekana {
+    .carousel-container {
+        padding-top: 0px !important;
+        padding-bottom: 15px !important;
+        grid-gap: 0px;
+        justify-content: center;
+    }
+
+    .unicef {
+        .slider-img {
+            width: 50%;
+            margin-top: 20px;
+            justify-self: center;
+        }
+    }
+
+    .c4dlab {
+        .slider-img {
+            width: 70%;
+            justify-self: center;
+        }
+    }
+
+    .naconek {
+        .slider-img {
+            width: 70%;
+            justify-self: center;
+        }
+    }
+
+    .coa {
+        .slider-img {
+         width: 32%;
+         margin-top: -10px;
+         margin-left: 40px;
+         min-width: 0%;
+         justify-self: center;
+        }
+    }
+
+    .educate {
+        .slider-img {
+            width: 40%;
+            margin-top: -20px;
+            justify-self: center;
+        }
+    }
+}
+
 #prototype {
     margin-top: -60px !important;
     margin-bottom: -60px !important;

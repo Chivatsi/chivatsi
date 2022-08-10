@@ -1,5 +1,90 @@
 <app-navigation-bar></app-navigation-bar>
 
-<app-update></app-update>
+<div class="wavvy-hero">
+    <div class="wavvy-hero-section">
+        <img class = "s-image" src="../../assets/images/onekana-logo.svg" alt="">
+    </div>
+    <div class="wavvy-hero-section">
+        <h3 class="wavvy-title">Onekana Digital Attendance</h3>
+    </div>
+    <div class="wavvy-hero-section">
+        <h5 class="wavvy-sub-title">Tracking enrollment and attendance for individual out of school children that are brought <br> back to school in Kenya</h5>
+    </div>
+    <div class="wavvy-hero-section wavvy-hero-image-wrapper">
+        <a>
+            <img class="wavvy-image" src="../../assets/images/onekana-home-export.png">
+        </a>
+    </div>
+</div>
+
+<div class="project-background">
+    <div class="project-bg-item" *ngFor="let item of projectItems">
+        <a class="project-bg-image">
+            <img src="{{item.images}}" width="17px">
+        </a>
+        <p class="project-bg-text">{{item.text}}</p>
+
+        <div class="project-bg-wrapper">
+            <p class="project-bg-text light">{{item.description}}</p>
+            <p class="project-bg-text light">{{item.description2}}</p>
+            <p class="project-bg-text light">{{item.description3}}</p>
+            <p class="project-bg-text light">{{item.description4}}</p>
+            <p class="project-bg-text light">{{item.description5}}</p>
+        </div>
+    </div>
+</div>
+
+<div class="approach">
+    <img src="../../assets/images/approach.svg" width="50px" class="approach-logo">
+    <p class="approach-text">Approach & Process</p>
+    <div class="horizontal-line"></div>
+</div>
+
+<div class="approach-wrapper container">
+    <div class="approach-items" *ngFor="let item of approach">
+        <a class="approach-image">
+            <img src="{{item.images}}" width="50px">
+        </a>
+        <p class="approach-item-text">{{item.text}}</p>
+        <div class="approach-item-description">
+            <p class="approach-list-item">{{item.description}}</p>
+            <p class="approach-list-item">{{item.description2}}</p>
+            <p class="approach-list-item">{{item.description3}}</p>
+            <p class="approach-list-item">{{item.description4}}</p>
+            <p class="approach-list-item">{{item.description5}}</p>
+        </div>
+    </div>
+</div>
+
+<div class="challenge">
+    <h4 class="challenge-text">Project Challenge</h4>
+    <p class="challenge-description">How might we address disparities in access to education that still exist in the arid and semi-arid areas as well as in the informal settlements of Kenya with 20% of the children who join grade one being likely to leave before reaching the <br>last grade of primary education?</p>
+</div>
+
+<div>
+    <h4 class="challenge-text onekana-partner-text">Project Partners</h4>
+
+    <div class="onekana-carousel">
+        <lib-carousel id="onekana"
+        [sliderItems]="partnerCarousel" 
+        [sliderOptions]="partnerOptions"
+        [slidesToShow] = 5
+        [autoSlide]="false"
+        [slideInterval]="1800">
+      </lib-carousel>
+      </div>
+
+</div>
+
+<div class="goals">
+    <h4 class="challenge-text">Project Goals</h4>
+    <p class="challenge-description more-desc"><b>Goal #1:</b>To digitize the existing paper based tracking tools for pupils, teachers and schools to automate the process, increase the reliability and accuracy of the data collected.</p>
+    <p class="challenge-description more-desc"><b>Goal #2:</b>To enable data collection on pupil attendance and progress at school level.</p>
+    <p class="challenge-description more-desc"><b>Goal #3:</b>To develop a set of real-time reports and informatics tailor-made for each of the stakeholders and audiences from school, county and national level.</p>
+    <p class="challenge-description more-desc"><b>Goal #4:</b>To provide an integration mechanism with the existing Government EMIS dashboard.</p>
+    <p class="challenge-description more-desc"><b>Goal #5:</b>To provide structured information that can be used for policy making and planning.</p>
+
+</div>
+
 
 <app-footer></app-footer>

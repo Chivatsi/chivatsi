@@ -1,0 +1,447 @@
+@keyframes imageScale {
+    0% {width: 100%;}
+    50% {width: 103%;}
+    100% {width: 100%;}
+    0% {transform: translatey(0px);}
+    50% {transform: translatey(-3px);transform: translatex(-6px);}
+    100% {transform: translatey(0px);}
+}
+
+@keyframes imageScale2 {
+    0% {transform: scale(1)}
+    100% {transform: scale(1.1)}
+}
+
+@keyframes imageTransform {
+    0% {transform: translatey(0px);}
+    50% {transform: translatey(-10px);}
+    100% {transform: translatey(0px);}
+}
+
+@keyframes imageRotate {
+    0% {transform: rotate(0turn); }
+    100% {transform: rotate(1turn); transition: transform 100ms ease-in-out;}
+}
+
+@keyframes colorPulse {
+    0% {background-color: #374395;}
+    21% {background-color: #374395;}
+    46% {background-color: #F6E387;}
+    71% {background-color: #3086C6;}
+   96% {background-color: #F6C256;}
+   100% {background-color: #F6C256;}
+}
+
+
+.wavvy-hero {
+    display: grid;
+    grid-template-rows: 90px 50px 70px 500px;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.s-image {
+    width: 60px;
+    height: 60px;
+    animation: imageScale 3s infinite normal;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+}
+
+.wavvy-hero-section {
+    justify-self: center;
+}
+
+.wavvy-title {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    color: var(--color-text-black);
+}
+
+.wavvy-sub-title {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: var(--color-text-blue);
+    text-align: center;
+}
+
+.wavvy-hero-image-wrapper {
+    width: 70%;
+}
+
+.wavvy-image {
+    animation: imageScale 3s infinite normal;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+}
+
+.project-background {
+    display: grid;
+    margin-top: 120px;
+    justify-content: center;
+    grid-template-columns: 300px 300px 300px;
+    row-gap: 20px;
+}
+
+.project-bg-text {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 14px; 
+    text-align: left;
+    grid-area: bgText;
+    align-self: center;
+}
+
+.project-bg-image {
+    grid-area: bgImage;
+}
+
+.light {
+    font-family: 'Prompt', sans-serif;
+    font-size: 13px; 
+    font-weight: 300;
+    grid-area: bgLight;
+}
+
+.project-bg-item {
+    display: grid;
+    grid-template-columns: 20px 200px;
+    column-gap: 10px;
+    grid-template-rows: 40px 100px;
+    justify-self: center;
+    align-self: flex-end;
+    grid-template-areas: "bgImage bgText"
+                         "bgImage  bgLight";
+}
+
+.approach {
+    display: grid;
+    grid-template-columns: 60px 200px 100px;
+    padding-left: 24vw;
+    margin-top: 65px;
+}
+
+.approach-logo {
+    align-self: center;
+}
+
+.approach-text {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 14px; 
+    align-self: flex-end;
+}
+
+.horizontal-line {
+    width: 35vw;
+    height: 0px;
+    border: 2px solid var(--color-line);
+    background-color: var(--color-line);
+    opacity: 0.5;
+    align-self: center;
+}
+
+.approach-wrapper {
+    display: grid;
+    grid-template-columns: repeat(6, 190px);
+    margin-top: 40px;
+    padding-left: 8vw;
+}
+
+.approach-items {
+  display: grid;
+  align-content: center;
+  grid-template-rows: 50px 30px 100px;
+}
+
+.approach-image {
+    justify-self: center;
+    animation: imageRotate 3s infinite normal;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+}
+
+.approach-item-text {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    justify-self: center;
+    text-align: center;
+}
+
+.approach-item-description {
+    font-family: 'Prompt', sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    justify-self: center;
+    text-align: center;
+}
+
+.approach-list-item {
+    margin-bottom: 10px;
+}
+
+.challenge {
+    display: grid;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.goals {
+   @extend .challenge
+}
+
+.challenge-text {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    justify-self: center;
+    text-align: center;
+}
+
+.challenge-description {
+    @extend .challenge-text;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--color-text-blue);
+    width: 55%;
+}
+
+.more-desc {
+    color: var(--color-text-black);
+    width: 80%;
+}
+
+.insights-container {
+    box-shadow: 0px 10px 10px #00000029;
+    border-radius: 10px;     
+    background-color: var(--color-purple);
+}
+
+.insights {
+    margin-top: 50px;
+    display: grid;
+    justify-content: center;
+
+}
+
+.learning-insights {
+    padding-top: 90px;
+    justify-self: center;
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--color-white);
+
+}
+
+.key-insights {
+    @extend .learning-insights;
+    font-weight: 500;
+    font-size: 14px;
+    padding-top: 0px;
+}
+
+.understand-insights {
+    @extend .learning-insights;
+    font-weight: 200;
+    font-size: 13px;
+    padding-top: 40px;
+    width: 47vw;
+}
+
+.button-insights {
+    background-color: var(--color-body);
+    border-radius: 10px;
+    border: none;
+    color: var(--color-text-blue);
+    font-family: 'Prompt', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    box-shadow: 0px 10px 10px #00000029;
+    width: 200px;
+    height: 44px;  
+    margin-top: 20px;
+    animation: imageScale 5s infinite normal;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+}
+
+.button-insights:hover {
+    animation: imageScale2 normal;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+}
+
+.button-insights-link {
+    justify-self: center;
+    text-align: center;
+    text-decoration: none;
+}
+
+.research {
+    @extend .insights;
+    margin-top: 0;
+    padding-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    grid-template-rows: 80px 200px;
+    grid-template-areas: "insight1 insight3 insight5"
+                         "insight2 insight4 insight6";
+    text-align: left;
+}
+
+.research-item {
+    justify-self: center;
+    text-align: left;
+    color: var(--color-white);
+    font-family: 'DM Sans', sans-serif;
+}
+
+.insight1 {
+    font-size: 14px;
+    font-weight: 200;
+    grid-area: insight1;
+}
+
+.insight2 {
+    font-size: 18px;
+    font-weight: 600;
+    grid-area: insight2;
+}
+
+.insight3 {
+    font-size: 18px;
+    font-weight: 600;
+    grid-area: insight3;
+    margin-top: 10px;
+    animation: imageRotate 3s infinite normal;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+}
+
+
+.insight4 {
+    font-size: 18px;
+    font-weight: 600;
+    grid-area: insight4;
+    border: 1px dashed #D0D0D0;
+}
+
+
+.insight5 {
+    font-size: 14px;
+    font-weight: 200;
+    grid-area: insight5;
+}
+
+.insight6 {
+    font-size: 14px;
+    font-weight: 500;
+    grid-area: insight6;
+}
+
+.visual-concept {
+    @extend .insights
+}
+
+.visual-concept-item {
+    justify-self: center;
+    text-align: center;
+}
+
+.colors-wrapper {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin-top: 20px;
+}
+
+.colors {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.typography-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.typography {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    font-family: 'Montserrat' sans-serif;
+    font-weight: 500;
+}
+
+.semibold {
+    @extend .typography;
+    font-weight: 600;
+}
+
+.bold {
+    @extend .typography;
+    font-weight: 700;
+}
+
+.title {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--color-text-blue);
+}
+
+.scheme {
+    @extend .title;
+    font-size: 16px;
+    color: var(--color-text-black);
+}
+
+.audience {
+    font-family: 'Prompt', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: var(--color-text-blue);
+    width: 43vw;
+}
+
+.typography-title {
+    @extend .scheme;
+}
+
+.example1, .example2, .example3 {
+    font-size: 13px;
+    color: var(--color-text-blue);
+}
+
+.hex {
+    font-family: 'Prompt', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--color-text-blue);
+}
+
+.prototype {
+    display: grid;
+   background-color: var(--color-purple);
+   justify-content: center;
+   padding-top: 60px;
+}
+
+.prototype-text {
+    justify-self: center;
+    text-align: center;
+    color: var(--color-white);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.onekana-partner-text {
+    padding-top: 20px;
+}
+
