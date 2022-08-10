@@ -9,4 +9,4 @@ A multidisciplinary visual designer based in Kenya specialized in UI/UX Design, 
 ## Working with
 
 🎟️ : [Sisitech Limited](https://sisitech.com/) <br>
-🎟️ : [Wavvy Pay LTD]()
+🎟️ : [Wavvy Pay LTD](https://chivatsi.wavvy.dev/wavvy-wallet)
