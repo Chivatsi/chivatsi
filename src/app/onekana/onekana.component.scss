@@ -63,7 +63,7 @@
     font-family: 'DM Sans', sans-serif;
     font-weight: 500;
     font-size: 15px;
-    color: var(--color-text-blue);
+    color: var(--color-text-onekana);
     text-align: center;
 }
 
@@ -205,8 +205,8 @@
     @extend .challenge-text;
     font-weight: 400;
     font-size: 14px;
-    color: var(--color-text-blue);
-    width: 55%;
+    color: var(--color-text-onekana);
+    // width: 55%;
 }
 
 .more-desc {
@@ -217,7 +217,7 @@
 .insights-container {
     box-shadow: 0px 10px 10px #00000029;
     border-radius: 10px;     
-    background-color: var(--color-purple);
+    background-color: var(--color-text-onekana);
 }
 
 .insights {
@@ -257,7 +257,7 @@
     background-color: var(--color-body);
     border-radius: 10px;
     border: none;
-    color: var(--color-text-blue);
+    color: var(--color-text-onekana);
     font-family: 'Prompt', sans-serif;
     font-weight: 700;
     font-size: 13px;
@@ -335,12 +335,14 @@
 .insight5 {
     font-size: 14px;
     font-weight: 200;
+    margin-top: 50px;
     grid-area: insight5;
 }
 
 .insight6 {
     font-size: 14px;
     font-weight: 500;
+    margin-top: 150px;
     grid-area: insight6;
 }
 
@@ -355,7 +357,7 @@
 
 .colors-wrapper {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    justify-content: center;
     margin-top: 20px;
 }
 
@@ -392,7 +394,7 @@
     font-family: 'DM Sans', sans-serif;
     font-weight: 700;
     font-size: 24px;
-    color: var(--color-text-blue);
+    color: var(--color-text-onekana);
 }
 
 .scheme {
@@ -405,7 +407,7 @@
     font-family: 'Prompt', sans-serif;
     font-weight: 400;
     font-size: 13px;
-    color: var(--color-text-blue);
+    color: var(--color-text-onekana);
     width: 43vw;
 }
 
@@ -415,21 +417,24 @@
 
 .example1, .example2, .example3 {
     font-size: 13px;
-    color: var(--color-text-blue);
+    color: var(--color-text-onekana);
+    font-family: 'Prompt', sans-serif;
 }
 
 .hex {
     font-family: 'Prompt', sans-serif;
     font-weight: 400;
     font-size: 12px;
-    color: var(--color-text-blue);
+    justify-self: center;
+    color: var(--color-text-onekana);
 }
 
 .prototype {
     display: grid;
-   background-color: var(--color-purple);
+   background-color: var(--color-text-onekana);
    justify-content: center;
    padding-top: 60px;
+   box-shadow: 0px 10px 10px #00000029;
 }
 
 .prototype-text {
@@ -443,5 +448,46 @@
 
 .onekana-partner-text {
     padding-top: 20px;
+}
+
+.mobile-wireframes {
+    margin-top: 20px;
+    display: grid;
+    justify-self: center;
+}
+
+.useful {
+    display: grid; 
+    grid-template-columns: repeat(3, 200px);
+    column-gap: 200px;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+.useful-link {
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.useful-image {
+    justify-self: center;
+}
+
+.useful-sub-text {
+    justify-self: center;
+    text-align: center;
+    color: var(--color-text-black);
+    font-family: 'Prompt', sans-serif;
+    font-weight: 300;
+    font-size: 12px; 
+}
+
+.useful-text {
+    @extend .useful-sub-text;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px; 
 }
 

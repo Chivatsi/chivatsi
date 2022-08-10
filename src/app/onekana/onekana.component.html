@@ -35,7 +35,7 @@
 </div>
 
 <div class="approach">
-    <img src="../../assets/images/approach.svg" width="50px" class="approach-logo">
+    <img src="../../assets/images/onekana-approach.svg" width="50px" class="approach-logo">
     <p class="approach-text">Approach & Process</p>
     <div class="horizontal-line"></div>
 </div>
@@ -58,7 +58,7 @@
 
 <div class="challenge">
     <h4 class="challenge-text">Project Challenge</h4>
-    <p class="challenge-description">How might we address disparities in access to education that still exist in the arid and semi-arid areas as well as in the informal settlements of Kenya with 20% of the children who join grade one being likely to leave before reaching the <br>last grade of primary education?</p>
+    <p class="challenge-description">How might we address disparities in access to education that still exist in the arid and semi-arid areas as well as in the informal settlements of Kenya <br> with 20% of the children who join grade one being likely to leave before reaching the last grade of primary education?</p>
 </div>
 
 <div>
@@ -83,8 +83,103 @@
     <p class="challenge-description more-desc"><b>Goal #3:</b>To develop a set of real-time reports and informatics tailor-made for each of the stakeholders and audiences from school, county and national level.</p>
     <p class="challenge-description more-desc"><b>Goal #4:</b>To provide an integration mechanism with the existing Government EMIS dashboard.</p>
     <p class="challenge-description more-desc"><b>Goal #5:</b>To provide structured information that can be used for policy making and planning.</p>
-
 </div>
 
+<div class="insights-container">
+    <div class="insights">
+        <h4 class="learning-insights">Implementation Approach</h4>
+        <p class="key-insights">Key Approaches from User Research</p>
+    </div>
+
+    <div class="research" *ngFor="let item of research">
+        <p class="research-item insight1">{{item.insight1}}</p>
+        <p class="research-item insight2">{{item.insight2}}</p>
+        <img class="research-item insight3" src="{{item.insight3}}" width="30px" height="40px">
+        <p class="research-item insight4"></p>
+        <p class="research-item insight5">{{item.insight5}}</p>
+        <p class="research-item insight6">{{item.insight6}}</p>
+    </div>
+</div>
+
+<div class="visual-concept">
+    <p class="visual-concept-item title">The Mobile Application</p>
+    <p class="visual-concept-item audience">The application would work on a smart device running on Android platform (the most common mobile device operating system). The main use of the mobile application would be data capturing and basic analytics. The class/head teachers would login and manage the attendance register, graduation and progress of pupils.<br><br>The teacher would have an option to provide comments regarding reason of absence and lack of promotion of any pupils. Once the data is captured, the teacher would then submit the records that would then be stored in a cloud service.<br><br>The mobile application will be offline first to cater for users in remote areas and will be able to capture data that would be transmitted via Internet on real time basis to a server for processing in a cloud service with redundancy mechanisms.<br><br>The data in the database will be analyzed using different parameters and reports generated addressing the description of each stakeholder. Various dissemination mechanisms shall be used for the narrative and infographics.</p>
+    <p class="visual-concept-item scheme">Wireframes</p>
+    <img src="../../assets/images/mobile-wireframes.svg" width="80%" alt="" class="mobile-wireframes">
+</div>
+
+<div class="visual-concept">
+    <p class="visual-concept-item title">The Web Application</p>
+    <p class="visual-concept-item audience">The web portal would be primarily used for data reports viewing and visualization. The web portal would largely be used by users whose roles would be to analyze statistics and trends. At the school level, the teachers and head-teachers would be given access to the portal to view classrooms attendance and overall school attendance records respectively. Any users with rights to access the web portal will be assigned appropriate login credentials that will give access to the system dashboard.<br><br>Beyond the teachers and head-teachers, education representatives from the county, national government and UNICEF will be able to get visual representation of the overall attendance of the students across the schools. They will also access aggregated data at county level where necessary. The UNICEF officials will also have access to a super admin dashboard which will allow creation and removal of users and roles.<br><br>The application would be cloud based with secured dashboards for the different categories of users.</p>
+    <p class="visual-concept-item scheme">Wireframes</p>
+    <img src="../../assets/images/web-wireframes.svg" width="60%" alt="" class="mobile-wireframes">
+</div>
+
+<div class="visual-concept">
+    <p class="visual-concept-item title">Visual Concept</p>
+    <p class="visual-concept-item scheme">Color Scheme</p>
+    <p class="visual-concept-item audience">We went for blue as our primary color to establish trust, loyalty and competence with our target audience i.e. teachers, government and partner stakeholders.</p>
+    <div class="colors-wrapper">
+        <div class="colors" *ngFor="let item of colors">
+            <img class="visual-concept-item" src="{{item.image}}" width="75px" height="75px">
+            <p class="visual-concept-item hex">{{item.hex}}</p>
+        </div>
+    </div>
+    <p class="visual-concept-item typography-title">Typography</p>
+    <div class="typography-wrapper">
+        <div class="typography" *ngFor="let item of typography">
+            <p class="visual-concept-item example1">{{item.text}}</p>
+            <p class="visual-concept-item example2">{{item.text2}}</p>
+            <p class="visual-concept-item example3">{{item.text3}}</p>
+        </div>
+
+        <div class="typography semibold" *ngFor="let item of typography">
+            <p class="visual-concept-item example1">{{item.text}}</p>
+            <p class="visual-concept-item example2">{{item.text2}}</p>
+            <p class="visual-concept-item example3">{{item.text3}}</p>
+        </div>
+
+        <div class="typography bold" *ngFor="let item of typography">
+            <p class="visual-concept-item example1">{{item.text}}</p>
+            <p class="visual-concept-item example2">{{item.text2}}</p>
+            <p class="visual-concept-item example3">{{item.text3}}</p>
+        </div>
+    </div>
+</div>
+
+<div class="prototype">
+    <h3 class="prototype-text">High Fidelity Prototype Designs - Mobile App</h3>
+    <lib-carousel id="prototype"
+      [sliderItems]="mobileCarousel" 
+      [sliderOptions]="mobileOptions"
+      [slidesToShow] = 5
+      [autoSlide]="true"
+      [slideInterval]="4000">
+    </lib-carousel>
+</div>
+
+<div class="prototype">
+    <h3 class="prototype-text">High Fidelity Prototype Designs - Web App</h3>
+    <lib-carousel id="prototype"
+      [sliderItems]="webCarousel" 
+      [sliderOptions]="webOptions"
+      [slidesToShow] = 3
+      [autoSlide]="true"
+      [slideInterval]="3000">
+    </lib-carousel>
+</div>
+
+<div>
+    <p class="visual-concept-item title useful-link">Useful Links</p>
+
+    <div class="useful">
+        <div class="useful-wrapper" *ngFor="let item of useful">
+            <a href="{{item.link}}" target="_blank"><img src="{{item.image}}" alt="" width="80%" class="useful-image"></a>
+            <p class="useful-sub-text">{{item.subtext}}</p>
+            <p class="useful-text">{{item.text}}</p>
+        </div>
+    </div>
+
+</div>
 
 <app-footer></app-footer>
