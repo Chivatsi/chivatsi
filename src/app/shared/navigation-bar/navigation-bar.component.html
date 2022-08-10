@@ -1,5 +1,5 @@
 <!-- Navigation Bar -->
-<nav class="navbar navbar-light bg-light main-nav-wrapper navbar-fixed-top">
+<nav class="navbar fixed-top navbar-light bg-light main-nav-wrapper" *ngIf="isMobile === false">
     <div class="container navbar-wrapper">
       <a class="navbar-brand" href="/chivatsi">
         <div class="logo">
@@ -33,4 +33,43 @@
         </div>
       </div>
     </div>
+</nav>
+
+<!-- Mobile Navigation Bar -->
+<nav class="navbar navbar-light bg-light fixed-top bg-light main-nav-wrapper"  *ngIf="isMobile === true">
+  <a class="navbar-brand" href="/chivatsi">
+    <div class="logo">
+      <img src="../../assets/images/chivatsi-logo.svg" alt="" width="60" height="30" class="chivatsi-logo">
+      <span class="nav-logo">
+        <span>Chivatsi</span>
+        <span class="nav-logo-sub-text">UX/UI Designer</span>
+      </span>
+    </div>
+  </a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active mobile-item">
+        <a class="nav-link" href="/">Home</a>
+      </li>
+      <li class="nav-item mobile-item">
+        <a class="nav-link" href="/about">About Me</a>
+      </li>
+      <li class="nav-item mobile-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Case Studies
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+          
+          <li *ngFor="let item of navItems"><a class="dropdown-item" href="{{item.link}}">{{item.title}}</a></li>
+        </ul>
+      </li>
+      <li class="nav-item mobile-item">
+        <a class="nav-link mobile-item" href="/contact">Contact</a>
+      </li>
+    </ul>
+  </div>
 </nav>
