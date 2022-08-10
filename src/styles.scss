@@ -38,8 +38,8 @@ body {
         grid-template-columns: repeat(1, 1fr);
         grid-auto-columns: 0%;
         margin-top: 7vh;
-        padding-bottom: 5vh;
         justify-items: center;
+        grid-gap: 0px;
     }
 
     #partners .item-active {
@@ -77,6 +77,8 @@ body {
     #tools .carousel-wrapper {
         margin-top: 5px !important;
         margin-left: 65px !important;
+        padding-left: 0vw !important;
+        padding-right: 0vw !important;
     } 
 
     #tools .flutter .slider-img {
@@ -85,9 +87,10 @@ body {
     }
 
     #tools .carousel-container {
-        grid-auto-columns: 0%;
         grid-template-columns: repeat(1, 1fr);
     }
+
+
 }
 
 #tools {
@@ -150,10 +153,18 @@ body {
 @media only screen and (min-device-width: 300px) and (max-device-width: 600px) {
 
     #hero .carousel-container {
-        grid-auto-columns: 0px;
         grid-template-columns: repeat(1, 1fr);
-        width: 100vw;
         padding-top: 0px !important;
+    }
+
+    #hero {
+        .hero-carousel {
+            width: 100% !important;
+        }
+
+        .carousel-container {
+            padding-right: 0px !important;
+        }
     }
 
     #hero .item-active {
@@ -249,3 +260,6 @@ body {
         }
     }
 }
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';

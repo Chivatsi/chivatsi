@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <filter id="Ellipse_9" x="0" y="0" width="64" height="64" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_3170" data-name="Group 3170" transform="translate(-419 -1643)">
+    <g id="Group_36" data-name="Group 36" transform="translate(0 40)">
+      <g transform="matrix(1, 0, 0, 1, 419, 1603)" filter="url(#Ellipse_9)">
+        <circle id="Ellipse_9-2" data-name="Ellipse 9" cx="17" cy="17" r="17" transform="translate(15 12)" fill="#2e87c5"/>
+      </g>
+      <g id="Group_26" data-name="Group 26" transform="translate(396.651 232.46)">
+        <path id="Path_1912" data-name="Path 1912" d="M330.146,107.528h-1.355c-.612-4.123-2.392-6.728-4.67-6.728-1.951,0-3.545,1.9-4.364,5.2a1.227,1.227,0,1,0,2.376.612c.575-2.324,1.508-3.364,1.991-3.364.578,0,1.682,1.431,2.187,4.282h-1.48a.706.706,0,0,0-.517,1.187l2.214,2.37h0a1.315,1.315,0,0,0,1.921,0l2.214-2.37h0a.706.706,0,0,0-.517-1.187Z" transform="translate(-267.022 1288.953)" fill="#fafafa"/>
+        <path id="Path_1913" data-name="Path 1913" d="M178.847,253.225A1.223,1.223,0,1,1,177.623,252a1.223,1.223,0,0,1,1.223,1.223" transform="translate(-131.531 1146.009)" fill="#fafafa"/>
+        <path id="Path_1914" data-name="Path 1914" d="M178.847,163.621a1.223,1.223,0,1,1-1.223-1.223,1.223,1.223,0,0,1,1.223,1.223" transform="translate(-131.531 1230.719)" fill="#fafafa"/>
+        <path id="Path_1915" data-name="Path 1915" d="M442.05,342.825a1.223,1.223,0,1,1-1.223-1.223,1.223,1.223,0,0,1,1.223,1.223" transform="translate(-380.361 1061.302)" fill="#fafafa"/>
+        <path id="Path_1916" data-name="Path 1916" d="M189.749,273.866c2.272,0,4.049-2.606,4.667-6.728h1.346a.71.71,0,0,0,.52-1.193l-2.208-2.367a1.312,1.312,0,0,0-1.921,0l-2.208,2.367a.709.709,0,0,0,.52,1.193h1.471c-.5,2.85-1.612,4.282-2.187,4.282s-1.456-1.223-1.988-3.364h0a1.226,1.226,0,0,0-2.383.578c.722,2.976,2.2,5.233,4.37,5.233Z" transform="translate(-139.987 1135.46)" fill="#fafafa"/>
+      </g>
+    </g>
+  </g>
+</svg>

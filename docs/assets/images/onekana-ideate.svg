@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <filter id="Ellipse_12" x="0" y="0" width="64" height="64" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_3174" data-name="Group 3174" transform="translate(-817 -1730)">
+    <g id="Group_39" data-name="Group 39" transform="translate(-111 70)">
+      <g transform="matrix(1, 0, 0, 1, 928, 1660)" filter="url(#Ellipse_12)">
+        <circle id="Ellipse_12-2" data-name="Ellipse 12" cx="17" cy="17" r="17" transform="translate(15 12)" fill="#2e87c5"/>
+      </g>
+      <g id="Group_29" data-name="Group 29" transform="translate(-108.618 -142.736)">
+        <path id="Path_1922" data-name="Path 1922" d="M341.569,19.731a.319.319,0,0,0,.319-.319V17.819a.319.319,0,1,0-.637,0v1.593a.319.319,0,0,0,.319.319Z" transform="translate(727.049 1804.653)" fill="#fafafa"/>
+        <path id="Path_1923" data-name="Path 1923" d="M187.685,83.14a.319.319,0,1,0,.451-.451l-1.127-1.127a.319.319,0,1,0-.451.451Z" transform="translate(876.201 1743.018)" fill="#fafafa"/>
+        <path id="Path_1924" data-name="Path 1924" d="M122.819,236.887h1.593a.319.319,0,1,0,0-.637h-1.593a.319.319,0,1,0,0,.637Z" transform="translate(937.833 1593.87)" fill="#fafafa"/>
+        <path id="Path_1925" data-name="Path 1925" d="M186.89,361.848a.319.319,0,0,0,.225-.093l1.127-1.127h0a.319.319,0,0,0-.451-.451l-1.127,1.127a.319.319,0,0,0,.225.544Z" transform="translate(876.094 1474.542)" fill="#fafafa"/>
+        <path id="Path_1926" data-name="Path 1926" d="M466.332,361.641a.319.319,0,0,0,.225-.544l-1.127-1.127h0a.319.319,0,1,0-.451.451l1.127,1.127h0A.319.319,0,0,0,466.332,361.641Z" transform="translate(607.919 1474.749)" fill="#fafafa"/>
+        <path id="Path_1927" data-name="Path 1927" d="M516.569,236.887h1.593a.319.319,0,0,0,0-.637h-1.593a.319.319,0,0,0,0,.637Z" transform="translate(558.423 1593.87)" fill="#fafafa"/>
+        <path id="Path_1928" data-name="Path 1928" d="M465.31,83.231a.319.319,0,0,0,.225-.093l1.127-1.127h0a.319.319,0,1,0-.451-.451l-1.127,1.127h0a.319.319,0,0,0,.225.544Z" transform="translate(607.815 1743.02)" fill="#fafafa"/>
+        <path id="Path_1929" data-name="Path 1929" d="M204.315,106.544l-.183,1.112a.319.319,0,0,0,.315.37h.053l.075.723h-.127a.319.319,0,0,0-.319.319v1.364a.319.319,0,0,0,.319.319h.334l.03.292h0a1.328,1.328,0,0,0,.515,1.013,1.836,1.836,0,0,0,1.165.4,1.575,1.575,0,0,0,1.679-1.41l.03-.292h.334a.319.319,0,0,0,.319-.319v-1.364a.319.319,0,0,0-.319-.319H208.4l.075-.723h.053a.319.319,0,0,0,.315-.37l-.183-1.112a5.424,5.424,0,1,0-4.35,0Zm3.9,2.843v.727h-3.448v-.727Zm-.681,1.605v.032a.944.944,0,0,1-1.042.79h0a1.216,1.216,0,0,1-.761-.253.7.7,0,0,1-.281-.537v-.032l-.025-.242h2.137Zm.231-2.243h-2.549l-.074-.723h2.7Zm-2.231-5.9H204.9a.637.637,0,1,1,.637-.637Zm.956-6.055a4.785,4.785,0,0,1,1.706,9.256.318.318,0,0,0-.2.351l.162.99h-.711v-1.037a.319.319,0,1,0-.637,0v1.036h-.637v-3.9h.637v.319a.319.319,0,0,0,.637,0v-.319h.637a1.275,1.275,0,1,0-1.275-1.275v.637h-.637v-.637a1.275,1.275,0,1,0-1.275,1.275h.637v3.9h-.711l.162-.99a.318.318,0,0,0-.2-.351,4.785,4.785,0,0,1,1.706-9.255Zm.956,6.055v-.637a.637.637,0,1,1,.637.637Z" transform="translate(862.128 1728.866)" fill="#fafafa"/>
+        <path id="Path_1930" data-name="Path 1930" d="M341.569,131.887a3.517,3.517,0,0,1,3.512,3.512.319.319,0,1,0,.637,0,4.154,4.154,0,0,0-4.15-4.15.319.319,0,1,0,0,.637Z" transform="translate(727.049 1695.046)" fill="#fafafa"/>
+        <path id="Path_1931" data-name="Path 1931" d="M306.887,140.319a.319.319,0,1,1-.319-.319.319.319,0,0,1,.319.319" transform="translate(760.775 1686.615)" fill="#fafafa"/>
+        <path id="Path_1932" data-name="Path 1932" d="M359.387,332.819a.319.319,0,1,1-.319-.319.319.319,0,0,1,.319.319" transform="translate(710.187 1501.125)" fill="#fafafa"/>
+      </g>
+    </g>
+  </g>
+</svg>

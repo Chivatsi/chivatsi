@@ -13,6 +13,7 @@ import { OnekanaComponent } from './onekana/onekana.component';
 import { AllyFreshComponent } from './ally-fresh/ally-fresh.component';
 import { UpdateComponent } from './shared/update/update.component';
 import { SfaComponent } from './sfa/sfa.component';
+// import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { SfaComponent } from './sfa/sfa.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CarouselModule
+    CarouselModule,
+    // NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
