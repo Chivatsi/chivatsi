@@ -336,6 +336,13 @@
     font-family: 'DM Sans', sans-serif;
 }
 
+.navigation-item {
+    justify-self: left;
+    text-align: left;
+    color: var(--color-text-black);
+    font-family: 'DM Sans', sans-serif;
+}
+
 .navigation {
     @extend .insights;
     margin-top: 0;
@@ -343,7 +350,7 @@
     display: grid;
     grid-template-columns: 100px 400px;
     column-gap: 180px;
-    grid-template-rows: 0px 200px;
+    grid-template-rows: 0px 50px;
     grid-template-areas: "insight2 insight5";
     text-align: left;
 }
@@ -509,4 +516,8 @@
 
 .nav-insight {
     text-align: left;
+}
+
+.nav-container {
+    padding-bottom: 100px;
 }
