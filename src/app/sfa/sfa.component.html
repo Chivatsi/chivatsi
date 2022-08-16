@@ -101,10 +101,29 @@
     </div>
 </div>
 
+<div class="design-approach">
+    <h4 class="design-approach-text">Design Approach</h4>
+    <p class="design-approach-sub-text">The client started off by sharing a prototype design she had created on Wix, an online website builder.</p>
+    <img class = "design-approach-image" src="../../assets/images/sfa-export-3.png">
+    <p class="design-approach-sub-text">We conducted a website audit and re-developed the website on Wordpress to tap into the <br> benefits of a stable CMS and on-the-go content publishing.</p>
+    <img class = "design-approach-image" src="../../assets/images/sfa-export-2.png">
+</div>
+
+<div class="design-approach">
+    <h4 class="design-approach-text">Usability Testing</h4>
+    <p class="design-approach-sub-text">Key insights collected from usability testing focused on the ease of creating, editing and publishing content on the go <br> and eliminate the guilt and difficulty of publishing content that’s associated with travel burnout.</p>
+    <h5 class="design-approach-text recommendations">Recommendations</h5>
+    <p class="design-approach-sub-text">Facilitate the installation and setup of storiesromaround on Wordpress android supported mobile application to facilitate content creation on the go.</p>
+    <img class = "design-approach-image wordpress" src="../../assets/images/wordpress.png">
+    <p class="design-approach-sub-text">Integrate an Instagram-stories with highlights like feature onto the platform that either pulls content directly from the content creator’s Instagram or allows <br> for publishing of highlights powered by EmbedSocial.</p>
+    <img class = "design-approach-image highlights" src="../../assets/images/sfa-highlights.png">
+</div>
+
+
 <div class="visual-concept">
     <p class="visual-concept-item title">Visual Concept</p>
     <p class="visual-concept-item scheme">Color Scheme</p>
-    <p class="visual-concept-item audience">Our target audience is between 18 and 60 years and therefore we went with a complementary color palette in order to get the immediate attention and captivate our youthful users.</p>
+    <p class="visual-concept-item audience">Stories From Around makes use of a minimalistic pallet with one main bright color for highlights, a dark color for contrast and a single color for background and surface color.</p>
     <div class="colors-wrapper">
         <div class="colors" *ngFor="let item of colors">
             <img class="visual-concept-item" src="{{item.image}}" width="75px" height="75px">
@@ -114,21 +133,8 @@
     <p class="visual-concept-item typography-title">Typography</p>
     <div class="typography-wrapper">
         <div class="typography" *ngFor="let item of typography">
-            <p class="visual-concept-item example1">{{item.text}}</p>
-            <p class="visual-concept-item example2">{{item.text2}}</p>
-            <p class="visual-concept-item example3">{{item.text3}}</p>
-        </div>
-
-        <div class="typography semibold" *ngFor="let item of typography">
-            <p class="visual-concept-item example1">{{item.text}}</p>
-            <p class="visual-concept-item example2">{{item.text2}}</p>
-            <p class="visual-concept-item example3">{{item.text3}}</p>
-        </div>
-
-        <div class="typography bold" *ngFor="let item of typography">
-            <p class="visual-concept-item example1">{{item.text}}</p>
-            <p class="visual-concept-item example2">{{item.text2}}</p>
-            <p class="visual-concept-item example3">{{item.text3}}</p>
+            <p class="visual-concept-item example1 {{item.class}}">{{item.text}}</p>
+            <p class="visual-concept-item example3 {{item.class}}">{{item.text3}}</p>
         </div>
     </div>
 </div>
@@ -138,10 +144,21 @@
     <lib-carousel id="prototype"
       [sliderItems]="partnersCarousel" 
       [sliderOptions]="partnersOptions"
-      [slidesToShow] = 5
+      [slidesToShow] = 2
       [autoSlide]="true"
       [slideInterval]="4000">
     </lib-carousel>
+</div>
+
+<div>
+    <p class="visual-concept-item title useful-link">Useful Links</p>
+    <div class="useful">
+        <div class="useful-wrapper" *ngFor="let item of useful">
+            <a href="{{item.link}}" target="_blank"><img src="{{item.image}}" alt="" width="80%" class="useful-image"></a>
+            <p class="useful-sub-text">{{item.subtext}}</p>
+            <p class="useful-text">{{item.text}}</p>
+        </div>
+    </div>
 </div>
 
 <app-footer></app-footer>

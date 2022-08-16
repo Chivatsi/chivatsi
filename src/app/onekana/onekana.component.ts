@@ -202,7 +202,6 @@ export class OnekanaComponent implements OnInit {
     {image: "../../assets/images/qr-code-manual.svg", link:"https://tzdash.request.africa/Onekana%20User%20Manual.pdf", subtext: "Document", text: "User Manual"},
     {image: "../../assets/images/qr-code-app.svg", link:"https://play.google.com/store/search?q=onekana&c=apps", subtext: "Google Playstore", text: "Mobile Application"},
     {image: "../../assets/images/qr-code-web.svg", link:"https://onekana.naconek.ke/", subtext: "onekana.naconek.ke", text: "Web Dashboard"}
-
   ]
 
 

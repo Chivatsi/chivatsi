@@ -18,87 +18,38 @@ export class SfaComponent implements OnInit {
     {
       id: '0',
       link: "",
-      img: "../../assets/images/prototype3.svg",
+      img: "../../assets/images/sfa-1.png",
       alt: "",
       class: "image"
     },
     {
       id: '1',
       link: "",
-      img: "../../assets/images/prototype1.svg",
+      img: "../../assets/images/sfa-2.png",
       alt: "",
       class: "image"
     },
     {
       id: '2',
       link: "",
-      img: "../../assets/images/prototype2.svg",
+      img: "../../assets/images/sfa-3.png",
       alt: "",
       class: "image"
     },
     {
       id: '3',
       link: "",
-      img: "../../assets/images/prototype4.svg",
+      img: "../../assets/images/sfa-4.png",
       alt: "",
       class: "image"
     },
     {
       id: '4',
       link: "",
-      img: "../../assets/images/prototype5.svg",
+      img: "../../assets/images/sfa-5.png",
       alt: "",
       class: "image"
-    },
-    {
-      id: '5',
-      link: "",
-      img: "../../assets/images/prototype6.svg",
-      alt: "",
-      class: "image"
-    },
-    {
-      id: '6',
-      link: "",
-      img: "../../assets/images/prototype7.svg",
-      alt: "",
-      class: "image"
-    },
-    {
-      id: '7',
-      link: "",
-      img: "../../assets/images/prototype8.svg",
-      alt: "",
-      class: "image"
-    },
-    {
-      id: '8',
-      link: "",
-      img: "../../assets/images/prototype9.svg",
-      alt: "",
-      class: "image"
-    },
-    {
-      id: '9',
-      link: "",
-      img: "../../assets/images/prototype10.svg",
-      alt: "",
-      class: "image"
-    },
-    {
-      id: '10',
-      link: "",
-      img: "../../assets/images/prototype12.svg",
-      alt: "",
-      class: "image"
-    },
-    {
-      id: '11',
-      link: "",
-      img: "../../assets/images/prototype11.svg",
-      alt: "",
-      class: "image"
-    },
+    }
   ]
 
   projectItems: any[]=[
@@ -133,16 +84,19 @@ export class SfaComponent implements OnInit {
   ]
 
   colors: any[]=[
-    {image: "../../assets/images/purple.svg", hex: "#7240FF"},
-    {image: "../../assets/images/yellow.svg", hex: "#FFCC66"},
-    {image: "../../assets/images/blue.svg", hex: "#24B6F7"},
-    {image: "../../assets/images/red.svg", hex: "#EE4444"},
-    {image: "../../assets/images/gray.svg", hex: "#DFDFD6"},
-    {image: "../../assets/images/black.svg", hex: "#141418"}
+    {image: "../../assets/images/yellow-sfa.svg", hex: "#FFC03A"}
   ]
 
   typography: any[]=[
-    {text: 'Montserrat', text2: 'Medium', text3: 'Recent Transactions'}
+    {text: 'Raleway', text2: 'Medium', text3: 'Recent Transactions', class: 'raleway'},
+    {text: 'Oswald', text2: 'Medium', text3: 'Recent Transactions', class: 'oswald'},
+    {text: 'Primera Signature', text2: 'Medium', text3: 'Recent Transactions', class: 'primera'}
+  ]
+
+  useful: any[]=[
+    {image: "../../assets/images/sfa-qr-pexels.svg", link:"https://www.pexels.com/@maryannkariuki/", subtext: "Pexels", text: "Photography Portfolio"},
+    {image: "../../assets/images/sfa-qr-web.svg", link:"https://storiesfromaround.com/", subtext: "Website", text: "Storiesfromaround"},
+    {image: "../../assets/images/sfa-qr-anchor.svg", link:"https://anchor.fm/maryann-kariuki0", subtext: "Podcast", text: "Anchor Fm"}
   ]
 
 }

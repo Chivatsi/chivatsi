@@ -409,13 +409,14 @@
 
 .colors-wrapper {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     margin-top: 20px;
 }
 
 .colors {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
 }
 
 .typography-wrapper {
@@ -446,7 +447,7 @@
     font-family: 'DM Sans', sans-serif;
     font-weight: 700;
     font-size: 24px;
-    color: var(--color-text-gold);
+    color: var(--color-text-black);
 }
 
 .scheme {
@@ -459,7 +460,7 @@
     font-family: 'Prompt', sans-serif;
     font-weight: 400;
     font-size: 13px;
-    color: var(--color-text-gold);
+    color: var(--color-text-black);
     width: 43vw;
 }
 
@@ -469,7 +470,7 @@
 
 .example1, .example2, .example3 {
     font-size: 13px;
-    color: var(--color-text-gold);
+    color: var(--color-text-black);
 }
 
 .hex {
@@ -481,7 +482,7 @@
 
 .prototype {
     display: grid;
-   background-color: var(--color-purple);
+   background-color: var(--color-text-gold);
    justify-content: center;
    padding-top: 60px;
 }
@@ -506,7 +507,7 @@
     text-align: center;
     font-family: 'DM Sans', sans-serif;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .sitemap-image {
@@ -520,4 +521,97 @@
 
 .nav-container {
     padding-bottom: 100px;
+}
+
+.design-approach {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.design-approach-text {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.design-approach-sub-text {
+    font-family: 'Prompt', sans-serif;
+    font-size: 13px; 
+    font-weight: 400;
+}
+
+.design-approach-image {
+    max-width: 60%;
+    justify-self: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.recommendations {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.wordpress {
+    max-width: 45%;
+}
+
+.highlights {
+    max-width: 50%;
+}
+
+.raleway {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.oswald {
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.primera {
+    font-family: 'Arizonia', cursive;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+.useful {
+    display: grid; 
+    grid-template-columns: repeat(3, 200px);
+    column-gap: 200px;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.useful-link {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    color: var(--color-text-gold);
+}
+
+.useful-image {
+    justify-self: center;
+}
+
+.useful-sub-text {
+    justify-self: center;
+    text-align: center;
+    color: var(--color-text-black);
+    font-family: 'Prompt', sans-serif;
+    font-weight: 300;
+    font-size: 12px; 
+}
+
+.useful-text {
+    @extend .useful-sub-text;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px; 
 }
