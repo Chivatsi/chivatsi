@@ -2,7 +2,7 @@
 
 <div class="wavvy-hero">
     <div class="wavvy-hero-section">
-        <img class = "s-image" src="../../assets/images/wavvy-wallet-sm-logo.svg" alt="">
+        <img class = "s-image" src="../../assets/images/wavvy-wallet-sm-logo.svg" alt="" loading="lazy">
     </div>
     <div class="wavvy-hero-section">
         <h3 class="wavvy-title">Wavvy Wallet</h3>
@@ -12,7 +12,7 @@
     </div>
     <div class="wavvy-hero-section wavvy-hero-image-wrapper">
         <a>
-            <img class = "wavvy-image" src="../../assets/images/wavvy-home-export.svg">
+            <img class = "wavvy-image" src="../../assets/images/wavvy-home-export.svg" loading="lazy">
         </a>
     </div>
 </div>
@@ -20,7 +20,7 @@
 <div class="project-background">
     <div class="project-bg-item" *ngFor="let item of projectItems">
         <a class="project-bg-image">
-            <img src="{{item.images}}" width="17px">
+            <img src="{{item.images}}" width="17px" loading="lazy">
         </a>
         <p class="project-bg-text">{{item.text}}</p>
 
@@ -35,7 +35,7 @@
 </div>
 
 <div class="approach">
-    <img src="../../assets/images/approach.svg" width="50px" class="approach-logo">
+    <img src="../../assets/images/approach.svg" width="50px" class="approach-logo" loading="lazy">
     <p class="approach-text">Approach & Process</p>
     <div class="horizontal-line"></div>
 </div>
@@ -43,7 +43,7 @@
 <div class="approach-wrapper container">
     <div class="approach-items" *ngFor="let item of approach">
         <a class="approach-image">
-            <img src="{{item.images}}" width="50px">
+            <img src="{{item.images}}" width="50px" loading="lazy">
         </a>
         <p class="approach-item-text">{{item.text}}</p>
         <div class="approach-item-description">
@@ -85,7 +85,7 @@
     <div class="research" *ngFor="let item of research">
         <p class="research-item insight1">{{item.insight1}}</p>
         <p class="research-item insight2">{{item.insight2}}</p>
-        <img class="research-item insight3" src="{{item.insight3}}" width="40px" height="51px">
+        <img class="research-item insight3" src="{{item.insight3}}" width="40px" height="51px" loading="lazy">
         <p class="research-item insight4"></p>
         <p class="research-item insight5">{{item.insight5}}</p>
         <p class="research-item insight6">{{item.insight6}}</p>
@@ -98,7 +98,7 @@
     <p class="visual-concept-item audience">Our target audience is between 18 and 60 years and therefore we went with a complementary color palette in order to get the immediate attention and captivate our youthful users.</p>
     <div class="colors-wrapper">
         <div class="colors" *ngFor="let item of colors">
-            <img class="visual-concept-item" src="{{item.image}}" width="75px" height="75px">
+            <img class="visual-concept-item" src="{{item.image}}" width="75px" height="75px" loading="lazy">
             <p class="visual-concept-item hex">{{item.hex}}</p>
         </div>
     </div>

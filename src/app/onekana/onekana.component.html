@@ -12,7 +12,7 @@
     </div>
     <div class="wavvy-hero-section wavvy-hero-image-wrapper">
         <a>
-            <img class="wavvy-image" src="../../assets/images/onekana-home-export.png">
+            <img class="wavvy-image" src="../../assets/images/onekana-home-export.png" loading="lazy">
         </a>
     </div>
 </div>
@@ -20,7 +20,7 @@
 <div class="project-background">
     <div class="project-bg-item" *ngFor="let item of projectItems">
         <a class="project-bg-image">
-            <img src="{{item.images}}" width="17px">
+            <img src="{{item.images}}" width="17px" loading="lazy">
         </a>
         <p class="project-bg-text">{{item.text}}</p>
 
@@ -35,7 +35,7 @@
 </div>
 
 <div class="approach">
-    <img src="../../assets/images/onekana-approach.svg" width="50px" class="approach-logo">
+    <img src="../../assets/images/onekana-approach.svg" width="50px" class="approach-logo" loading="lazy">
     <p class="approach-text">Approach & Process</p>
     <div class="horizontal-line"></div>
 </div>
@@ -43,7 +43,7 @@
 <div class="approach-wrapper container">
     <div class="approach-items" *ngFor="let item of approach">
         <a class="approach-image">
-            <img src="{{item.images}}" width="50px">
+            <img src="{{item.images}}" width="50px" loading="lazy">
         </a>
         <p class="approach-item-text">{{item.text}}</p>
         <div class="approach-item-description">
@@ -94,7 +94,7 @@
     <div class="research" *ngFor="let item of research">
         <p class="research-item insight1">{{item.insight1}}</p>
         <p class="research-item insight2">{{item.insight2}}</p>
-        <img class="research-item insight3" src="{{item.insight3}}" width="30px" height="40px">
+        <img class="research-item insight3" src="{{item.insight3}}" width="30px" height="40px" loading="lazy">
         <p class="research-item insight4"></p>
         <p class="research-item insight5">{{item.insight5}}</p>
         <p class="research-item insight6">{{item.insight6}}</p>
@@ -105,14 +105,14 @@
     <p class="visual-concept-item title">The Mobile Application</p>
     <p class="visual-concept-item audience">The application would work on a smart device running on Android platform (the most common mobile device operating system). The main use of the mobile application would be data capturing and basic analytics. The class/head teachers would login and manage the attendance register, graduation and progress of pupils.<br><br>The teacher would have an option to provide comments regarding reason of absence and lack of promotion of any pupils. Once the data is captured, the teacher would then submit the records that would then be stored in a cloud service.<br><br>The mobile application will be offline first to cater for users in remote areas and will be able to capture data that would be transmitted via Internet on real time basis to a server for processing in a cloud service with redundancy mechanisms.<br><br>The data in the database will be analyzed using different parameters and reports generated addressing the description of each stakeholder. Various dissemination mechanisms shall be used for the narrative and infographics.</p>
     <p class="visual-concept-item scheme">Wireframes</p>
-    <img src="../../assets/images/mobile-wireframes.svg" width="80%" alt="" class="mobile-wireframes">
+    <img src="../../assets/images/mobile-wireframes.svg" width="80%" alt="" class="mobile-wireframes" loading="lazy">
 </div>
 
 <div class="visual-concept">
     <p class="visual-concept-item title">The Web Application</p>
     <p class="visual-concept-item audience">The web portal would be primarily used for data reports viewing and visualization. The web portal would largely be used by users whose roles would be to analyze statistics and trends. At the school level, the teachers and head-teachers would be given access to the portal to view classrooms attendance and overall school attendance records respectively. Any users with rights to access the web portal will be assigned appropriate login credentials that will give access to the system dashboard.<br><br>Beyond the teachers and head-teachers, education representatives from the county, national government and UNICEF will be able to get visual representation of the overall attendance of the students across the schools. They will also access aggregated data at county level where necessary. The UNICEF officials will also have access to a super admin dashboard which will allow creation and removal of users and roles.<br><br>The application would be cloud based with secured dashboards for the different categories of users.</p>
     <p class="visual-concept-item scheme">Wireframes</p>
-    <img src="../../assets/images/web-wireframes.svg" width="60%" alt="" class="mobile-wireframes">
+    <img src="../../assets/images/web-wireframes.svg" width="60%" alt="" class="mobile-wireframes" loading="lazy">
 </div>
 
 <div class="visual-concept">
@@ -121,7 +121,7 @@
     <p class="visual-concept-item audience">We went for blue as our primary color to establish trust, loyalty and competence with our target audience i.e. teachers, government and partner stakeholders.</p>
     <div class="colors-wrapper">
         <div class="colors" *ngFor="let item of colors">
-            <img class="visual-concept-item" src="{{item.image}}" width="75px" height="75px">
+            <img class="visual-concept-item" src="{{item.image}}" width="75px" height="75px" loading="lazy">
             <p class="visual-concept-item hex">{{item.hex}}</p>
         </div>
     </div>
@@ -174,7 +174,7 @@
 
     <div class="useful">
         <div class="useful-wrapper" *ngFor="let item of useful">
-            <a href="{{item.link}}" target="_blank"><img src="{{item.image}}" alt="" width="80%" class="useful-image"></a>
+            <a href="{{item.link}}" target="_blank"><img src="{{item.image}}" alt="" width="80%" class="useful-image" loading="lazy"></a>
             <p class="useful-sub-text">{{item.subtext}}</p>
             <p class="useful-text">{{item.text}}</p>
         </div>

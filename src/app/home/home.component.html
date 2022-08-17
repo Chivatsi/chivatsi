@@ -19,7 +19,7 @@
           [sliderItems]="heroCarousel" 
           [sliderOptions]="heroOptions"
           [slidesToShow] = 1
-          [autoSlide]="false"
+          [autoSlide]="true"
           [slideInterval]="1800">
         </lib-carousel>
         </div>
@@ -35,7 +35,7 @@
       <div *ngFor="let item of serviceCards" class="s-card">
         <div class="s-content">
           <a href="{{item.link}}">
-          <img class = "s-image" src="{{item.image}}" alt="">
+          <img class = "s-image" src="{{item.image}}" alt="" loading="lazy">
           </a>
           <div class = "s-footer">
             <p class="s-footer-title">{{item.title}}</p>
@@ -73,7 +73,7 @@
 
     <div class="service-list">
      <div *ngFor="let item of serviceList" class="service">
-      <a href="https://www.behance.net/chivatsi" class="service-image-link"><img src="{{item.image}}" alt="" class="service-image"></a>
+      <a href="https://www.behance.net/chivatsi" class="service-image-link"><img src="{{item.image}}" alt="" class="service-image" loading="lazy"></a>
       <div class="service-text">
         <p class="service-text-1">{{item.text}}</p>
         <p class="service-number">{{item.number}}</p>

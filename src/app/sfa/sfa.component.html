@@ -2,14 +2,14 @@
 
 <div class="wavvy-hero">
     <div class="wavvy-hero-section">
-        <img class = "s-image" src="../../assets/images/sfa-logo-new.png" alt="">
+        <img class = "s-image" src="../../assets/images/sfa-logo-new.png" alt="" loading="lazy">
     </div>
     <div class="wavvy-hero-section">
         <h5 class="wavvy-sub-title">A public travel journal showcasing tales of different encounters with people, cultures, experiences <br> among other escapades of the renown travel blogger Maryann Kariuki.</h5>
     </div>
     <div class="wavvy-hero-section wavvy-hero-image-wrapper">
         <a class="wavvy-image-link">
-            <img class = "wavvy-image" src="../../assets/images/sfa-hero.png">
+            <img class = "wavvy-image" src="../../assets/images/sfa-hero.png" loading="lazy">
         </a>
     </div>
 </div>
@@ -17,7 +17,7 @@
 <div class="project-background">
     <div class="project-bg-item" *ngFor="let item of projectItems">
         <a class="project-bg-image">
-            <img src="{{item.images}}" width="17px">
+            <img src="{{item.images}}" width="17px" loading="lazy">
         </a>
         <p class="project-bg-text">{{item.text}}</p>
 
@@ -32,7 +32,7 @@
 </div>
 
 <div class="approach">
-    <img src="../../assets/images/approach-black.svg" width="50px" class="approach-logo">
+    <img src="../../assets/images/approach-black.svg" width="50px" class="approach-logo" loading="lazy">
     <p class="approach-text">Approach & Process</p>
     <div class="horizontal-line"></div>
 </div>
@@ -40,7 +40,7 @@
 <div class="approach-wrapper container">
     <div class="approach-items" *ngFor="let item of approach">
         <a class="approach-image">
-            <img src="{{item.images}}" width="50px">
+            <img src="{{item.images}}" width="50px" loading="lazy">
         </a>
         <p class="approach-item-text">{{item.text}}</p>
         <div class="approach-item-description">
@@ -78,7 +78,7 @@
     <div class="research" *ngFor="let item of research">
         <p class="research-item insight1">{{item.insight1}}</p>
         <p class="research-item insight2">{{item.insight2}}</p>
-        <img class="research-item insight3" src="{{item.insight3}}" width="40px" height="51px">
+        <img class="research-item insight3" src="{{item.insight3}}" width="40px" height="51px" loading="lazy">
         <p class="research-item insight4"></p>
         <p class="research-item insight5">{{item.insight5}}</p>
         <p class="research-item insight6">{{item.insight6}}</p>
@@ -87,7 +87,7 @@
 
 <div class="sitemap-container">
     <h4 class="sitemap-heading">User Experience Sitemap</h4>
-    <img class = "sitemap-image" src="../../assets/images/sfa ux sitemap.png">
+    <img class = "sitemap-image" src="../../assets/images/sfa ux sitemap.png" loading="lazy">
 </div>
 
 <div class="insights-container nav-container">
@@ -104,9 +104,9 @@
 <div class="design-approach">
     <h4 class="design-approach-text">Design Approach</h4>
     <p class="design-approach-sub-text">The client started off by sharing a prototype design she had created on Wix, an online website builder.</p>
-    <img class = "design-approach-image" src="../../assets/images/sfa-export-3.png">
+    <img class = "design-approach-image" src="../../assets/images/sfa-export-3.png" loading="lazy">
     <p class="design-approach-sub-text">We conducted a website audit and re-developed the website on Wordpress to tap into the <br> benefits of a stable CMS and on-the-go content publishing.</p>
-    <img class = "design-approach-image" src="../../assets/images/sfa-export-2.png">
+    <img class = "design-approach-image" src="../../assets/images/sfa-export-2.png" loading="lazy">
 </div>
 
 <div class="design-approach">
@@ -114,9 +114,9 @@
     <p class="design-approach-sub-text">Key insights collected from usability testing focused on the ease of creating, editing and publishing content on the go <br> and eliminate the guilt and difficulty of publishing content that’s associated with travel burnout.</p>
     <h5 class="design-approach-text recommendations">Recommendations</h5>
     <p class="design-approach-sub-text">Facilitate the installation and setup of storiesromaround on Wordpress android supported mobile application to facilitate content creation on the go.</p>
-    <img class = "design-approach-image wordpress" src="../../assets/images/wordpress.png">
+    <img class = "design-approach-image wordpress" src="../../assets/images/wordpress.png" loading="lazy">
     <p class="design-approach-sub-text">Integrate an Instagram-stories with highlights like feature onto the platform that either pulls content directly from the content creator’s Instagram or allows <br> for publishing of highlights powered by EmbedSocial.</p>
-    <img class = "design-approach-image highlights" src="../../assets/images/sfa-highlights.png">
+    <img class = "design-approach-image highlights" src="../../assets/images/sfa-highlights.png" loading="lazy">
 </div>
 
 
@@ -126,7 +126,7 @@
     <p class="visual-concept-item audience">Stories From Around makes use of a minimalistic pallet with one main bright color for highlights, a dark color for contrast and a single color for background and surface color.</p>
     <div class="colors-wrapper">
         <div class="colors" *ngFor="let item of colors">
-            <img class="visual-concept-item" src="{{item.image}}" width="75px" height="75px">
+            <img class="visual-concept-item" src="{{item.image}}" width="75px" height="75px" loading="lazy">
             <p class="visual-concept-item hex">{{item.hex}}</p>
         </div>
     </div>
@@ -154,7 +154,7 @@
     <p class="visual-concept-item title useful-link">Useful Links</p>
     <div class="useful">
         <div class="useful-wrapper" *ngFor="let item of useful">
-            <a href="{{item.link}}" target="_blank"><img src="{{item.image}}" alt="" width="80%" class="useful-image"></a>
+            <a href="{{item.link}}" target="_blank"><img src="{{item.image}}" alt="" width="80%" class="useful-image" loading="lazy"></a>
             <p class="useful-sub-text">{{item.subtext}}</p>
             <p class="useful-text">{{item.text}}</p>
         </div>
