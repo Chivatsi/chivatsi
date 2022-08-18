@@ -4,6 +4,11 @@ $primary:#ff5a5f;
 $secondary:#484848;
 $modal-fade-transform: scale(.8);
 
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+
+
+
 @keyframes imageTransform {
 	0% {
 		transform: translatey(0px);
@@ -33,21 +38,6 @@ body {
     --color-body: #fafafa;
 }
 
-@media only screen and (min-device-width: 300px) and (max-device-width: 600px) {
-    #partners .carousel-container {
-        grid-template-columns: repeat(1, 1fr);
-        grid-auto-columns: 0%;
-        margin-top: 7vh;
-        justify-items: center;
-        grid-gap: 0px;
-    }
-
-    #partners .item-active {
-        padding-left: 7vw !important;
-    }
-
-}
-
 #partners {
 
     .sisitech .slider-img {
@@ -73,25 +63,6 @@ body {
     }
 }
 
-@media only screen and (min-device-width: 300px) and (max-device-width: 600px) {
-    #tools .carousel-wrapper {
-        margin-top: 5px !important;
-        margin-left: 65px !important;
-        padding-left: 0vw !important;
-        padding-right: 0vw !important;
-    } 
-
-    #tools .flutter .slider-img {
-        width: 50px !important;
-        margin-left: 0px !important;
-    }
-
-    #tools .carousel-container {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-
-}
 
 #tools {
 
@@ -149,28 +120,6 @@ body {
 .hero-carousel {
     margin-top: 15px;
     width: 100%;
-}
-
-@media only screen and (min-device-width: 300px) and (max-device-width: 600px) {
-
-    #hero .carousel-container {
-        grid-template-columns: repeat(1, 1fr);
-        padding-top: 0px !important;
-    }
-
-    #hero {
-        .hero-carousel {
-            width: 100% !important;
-        }
-
-        .carousel-container {
-            padding-right: 0px !important;
-        }
-    }
-
-    #hero .item-active {
-        padding-left: 0px !important;
-    }
 }
 
 #hero {
@@ -244,7 +193,7 @@ body {
     }
 }
 
-#prototype {
+#prototype, #prototype-wavvy {
     margin-top: -60px !important;
     margin-bottom: -60px !important;
 
@@ -262,5 +211,66 @@ body {
     }
 }
 
-/* Importing Bootstrap SCSS file. */
-@import '~bootstrap/scss/bootstrap';
+// Responsive Mobile View
+
+@media only screen and (min-device-width: 300px) and (max-device-width: 600px) {
+    #partners .carousel-container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-columns: 0%;
+        margin-top: 7vh;
+        justify-items: center;
+        grid-gap: 0px;
+    }
+
+    #partners .item-active {
+        padding-left: 7vw !important;
+    }
+
+    #hero .carousel-container {
+        grid-template-columns: repeat(1, 1fr);
+        padding-top: 0px !important;
+    }
+
+    #hero {
+        .hero-carousel {
+            width: 100% !important;
+        }
+
+        .carousel-container {
+            padding-right: 0px !important;
+        }
+    }
+
+    #hero .item-active {
+        padding-left: 0px !important;
+    }
+
+    #tools .carousel-wrapper {
+        margin-top: 5px !important;
+        margin-left: 65px !important;
+        padding-left: 0vw !important;
+        padding-right: 0vw !important;
+    } 
+
+    #tools .flutter .slider-img {
+        width: 50px !important;
+        margin-left: 0px !important;
+    }
+
+    #tools .carousel-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #prototype {
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
+    }
+
+    #prototype-wavvy {
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
+        margin-left: 40px !important;
+    }
+}
+
+

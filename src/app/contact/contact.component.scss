@@ -53,12 +53,6 @@
     padding-top: 30px;
     padding-bottom: 30px;
 }
-
-@media only screen and (min-device-width: 300px) and (max-device-width: 600px) {
-    .talk-to-me {
-        width: 90vw;
-    }
-}
     
 .talk-image {
     justify-self: center;
@@ -68,7 +62,17 @@
     justify-self: center;
     color: var(--color-text-black);
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 500;  
+}
+
+@media only screen and (min-device-width: 300px) and (max-device-width: 600px) {
+    .talk-to-me {
+        width: 90vw;
+    }
+
+    .talk-text {
+        margin-bottom: 10px;
+    }
 }
 
 

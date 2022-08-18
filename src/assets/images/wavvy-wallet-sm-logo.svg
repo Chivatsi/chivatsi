@@ -1,27 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 26.3.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 600 600" style="enable-background:new 0 0 600 600;" xml:space="preserve">
-<style type="text/css">
-	.st0{clip-path:url(#SVGID_00000145772513938455675770000008962779358777968040_);}
-	.st1{fill:#FFCC66;}
-	.st2{fill:#24B6F7;}
-	.st3{fill:#7240FF;}
-</style>
-<g>
-	<defs>
-		<rect id="SVGID_1_" width="600" height="600"/>
-	</defs>
-	<clipPath id="SVGID_00000107583476916585117380000004159549491696105401_">
-		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
-	</clipPath>
-	
-		<g id="Mask_Group_1" transform="translate(-153.719 -317.719)" style="clip-path:url(#SVGID_00000107583476916585117380000004159549491696105401_);">
-		<g id="Group_85" transform="translate(101.467 317.719)">
-			<ellipse id="Ellipse_37" class="st1" cx="46.8" cy="348.6" rx="308.1" ry="348.6"/>
-			<ellipse id="Ellipse_38" class="st2" cx="663.1" cy="348.6" rx="308.1" ry="348.6"/>
-			<ellipse id="Ellipse_39" class="st3" cx="352.3" cy="651.3" rx="310.8" ry="348.6"/>
-		</g>
-	</g>
-</g>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="100" viewBox="0 0 100 100">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_152" data-name="Rectangle 152" width="100" height="100" transform="translate(153.719 317.719)" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_1" data-name="Mask Group 1" transform="translate(-153.719 -317.719)" clip-path="url(#clip-path)">
+    <g id="Group_85" data-name="Group 85" transform="translate(101.467 317.719)">
+      <ellipse id="Ellipse_37" data-name="Ellipse 37" cx="51.351" cy="58.108" rx="51.351" ry="58.108" transform="translate(0)" fill="#fc6"/>
+      <ellipse id="Ellipse_38" data-name="Ellipse 38" cx="51.351" cy="58.108" rx="51.351" ry="58.108" transform="translate(102.703)" fill="#24b6f7"/>
+      <ellipse id="Ellipse_39" data-name="Ellipse 39" cx="51.802" cy="58.108" rx="51.802" ry="58.108" transform="translate(50.45 50.45)" fill="#7240ff"/>
+    </g>
+  </g>
 </svg>

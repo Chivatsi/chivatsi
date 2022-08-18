@@ -492,3 +492,152 @@
     font-size: 16px; 
 }
 
+// Mobile Responsive
+
+@media only screen and (min-device-width: 300px) and (max-device-width: 600px) {
+    
+     // Hero
+
+    .s-image {
+        width: 40px;
+        height: 40px;
+    }
+
+    .wavvy-title {
+        justify-self: center;
+        text-align: center;
+    }
+
+    .wavvy-sub-title {
+        margin-top: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .wavvy-hero-image-wrapper {
+        width: 100%;
+        margin-top: 100px;
+    }
+
+    .wavvy-hero {
+        grid-template-rows: 90px 50px 70px 450px;
+    }
+
+    // Projects 
+
+    .project-background {
+        margin-top: 0px;
+        grid-template-columns: 1fr;
+    }
+
+    .project-bg-item {
+        grid-template-columns: 1fr;
+        grid-template-areas: "bgImage"
+                             "bgText"
+                             "bgLight";
+        justify-content: center;
+        grid-template-rows: 40px 40px;
+    }
+
+    .project-bg-image {
+        justify-self: center;
+    }
+
+    .project-bg-text {
+        justify-content: center;
+        text-align: center;
+    }
+
+    // Approach
+
+    .approach {
+        grid-template-columns: auto;
+        padding-left: 0px;
+        justify-content: center;
+    }
+
+    .approach-text {
+        justify-self: center;
+        text-align: center;
+       }
+    
+    .horizontal-line {
+        justify-self: center;
+        }
+
+    .approach-logo {
+        justify-self: center;
+    }
+
+    .approach-wrapper {
+        grid-template-columns: auto;
+        padding-left: 0vw;
+    }
+
+    // Challenge
+
+    .challenge-description {
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 90%;
+    }
+
+    .onekana-carousel {
+        margin-left: 0px;
+    }
+
+    // Research
+
+    .research {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "insight1"
+                             "insight2"
+                             "insight3"
+                             "insight4"
+                             "insight5"
+                             "insight6";
+    }
+
+    .insight4 { 
+        display: none;
+    }
+
+    .insight5 {
+        margin-top: 30px;
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .insight6 {
+        margin-top: 50px;
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    // Audience
+
+    .audience {
+        width: 100vw;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    // Typography
+
+    .typography-wrapper {
+        grid-template-columns: auto;
+        row-gap: 50px;
+    }
+
+
+
+    // Links
+    .useful {
+        grid-template-columns: auto;
+    }
+
+}
+
