@@ -21,9 +21,11 @@ export class NavigationBarComponent implements OnInit {
   }
 
   navItems: any[]=[  
-      {title:'Wavvy Wallet', link: '/wavvy-wallet'},  
-      {title:'Onekana', link: '/onekana'},  
+      {title:'Onekana', link: '/onekana'}, 
+      {title:'Wavvy Wallet', link: '/wavvy-wallet'},
+      {title:'UJAM', link: '/ujam'},  
       {title:'Ally Fresh', link: '/ally-fresh'},  
+      {title:'Request Africa', link: '/request-africa'},
       {title:'Stories From Around', link: '/stories-from-around'},
   ]  
 

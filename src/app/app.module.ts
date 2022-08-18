@@ -13,6 +13,7 @@ import { OnekanaComponent } from './onekana/onekana.component';
 import { AllyFreshComponent } from './ally-fresh/ally-fresh.component';
 import { UpdateComponent } from './shared/update/update.component';
 import { SfaComponent } from './sfa/sfa.component';
+import { RequestAfricaComponent } from './request-africa/request-africa.component';
 // import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
@@ -27,7 +28,8 @@ import { SfaComponent } from './sfa/sfa.component';
     OnekanaComponent,
     AllyFreshComponent,
     UpdateComponent,
-    SfaComponent
+    SfaComponent,
+    RequestAfricaComponent
   ],
   imports: [
     BrowserModule,
