@@ -272,6 +272,16 @@ body {
         margin-bottom: 0px !important;
         margin-left: 40px !important;
     }
+
+    #web, #member {
+      .carousel-container {
+        grid-auto-columns: auto;
+      }
+
+      .item-active {
+        padding-left: 0px;
+      }
+    }
 }
 
 

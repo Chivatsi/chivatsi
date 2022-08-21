@@ -836,8 +836,14 @@
                             "insight6";
    }
 
+   .understand-insights {
+    width: 100vw;
+}
+
    .insights-container {
         padding-bottom: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
    }
 
    .insight4 { 
@@ -900,5 +906,25 @@
     justify-self: center;
     text-align: center;
    }
+
+   // Solution
+
+    .solution-grid {
+        grid-template-columns: auto;
+        row-gap: 50px;
+    }
+
+    .solution-image {
+        max-width: 25%;
+        padding-bottom: 20px;
+    }
+
+    .transparency {
+        max-width: 40%;
+    }
+
+    .our-solution-image-2 {
+        width: 100%;
+    }
 
 }
