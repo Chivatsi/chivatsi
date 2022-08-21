@@ -1,0 +1,131 @@
+<app-navigation-bar></app-navigation-bar>
+
+<div class="wavvy-hero">
+    <div class="wavvy-hero-section">
+        <img class = "s-image" src="../../assets/images/ujam-logo.png" alt="" loading="lazy">
+    </div>
+    <div class="wavvy-hero-section">
+        <h5 class="wavvy-sub-title">Make More Music</h5>
+    </div>
+    <div class="wavvy-hero-section wavvy-hero-image-wrapper">
+        <a class="wavvy-image-link">
+            <img class = "wavvy-image" src="../../assets/images/dynamo.png" loading="lazy">
+        </a>
+    </div>
+</div>
+
+<div class="project-background">
+    <div class="project-bg-item" *ngFor="let item of projectItems">
+        <a class="project-bg-image">
+            <img src="{{item.images}}" width="17px" loading="lazy">
+        </a>
+        <p class="project-bg-text">{{item.text}}</p>
+
+        <div class="project-bg-wrapper">
+            <p class="project-bg-text light">{{item.description}}</p>
+            <p class="project-bg-text light">{{item.description2}}</p>
+            <p class="project-bg-text light">{{item.description3}}</p>
+            <p class="project-bg-text light">{{item.description4}}</p>
+            <p class="project-bg-text light">{{item.description5}}</p>
+        </div>
+    </div>
+</div>
+
+<div class="approach">
+    <img src="../../assets/images/approach-dynamo.svg" width="50px" class="approach-logo" loading="lazy">
+    <p class="approach-text">Approach & Process</p>
+    <div class="horizontal-line"></div>
+</div>
+
+<div class="approach-wrapper container">
+    <div class="approach-items" *ngFor="let item of approach">
+        <a class="approach-image">
+            <img src="{{item.images}}" width="50px" loading="lazy">
+        </a>
+        <p class="approach-item-text">{{item.text}}</p>
+        <div class="approach-item-description">
+            <p class="approach-list-item">{{item.description}}</p>
+            <p class="approach-list-item">{{item.description2}}</p>
+            <p class="approach-list-item">{{item.description3}}</p>
+            <p class="approach-list-item">{{item.description4}}</p>
+            <p class="approach-list-item">{{item.description5}}</p>
+        </div>
+    </div>
+</div>
+
+<div class="challenge">
+    <h4 class="challenge-text">Project Background</h4>
+    <p class="challenge-description">UJAM creates a variety of incredible sounding yet easy to use music plug-ins, designed to enhance the creative process and to make music creation faster, better and easier than ever.</p>
+    <p class="challenge-description">Instruments and effects are available for most major DAW’s and plug-in formats including VST, AU and AAX.</p>
+</div>
+
+<div class="challenge">
+    <h4 class="challenge-text">Our Challenge</h4>
+    <p class="challenge-description">How might we develop fast, reliable and stable music plugins designed to enhance the creative process and to make music creation faster, better and easier than ever?</p>
+</div>
+
+<div class="challenge">
+    <h4 class="challenge-text">My Role</h4>
+    <p class="challenge-description">At Ujam, I was responsible for scripting and implementing pixel perfect designs from assets delivered by the Senior UI/UX designer. Over two years, we worked on a couple of music products such as beat makers, bassists, finishers and drummers.</p>
+    <p class="challenge-description">I will provide an overview approach for building one of my favorite plugins, the Finisher Dynamo.</p>
+</div>
+
+<div class="dynamo-cover"></div>
+
+<div class="challenge atlas-wrapper">
+    <h4 class="challenge-text atlas-text">Finisher ATLAS is a time warping playground.Regardless of the input sound, it serves as a mystery box that outputs a unique and <br>dynamic soundscape for you to get your creative juices flowing.</h4>
+    <p class="challenge-description atlas-text atlas-text-desc bold">Generate vocal chops from raw vocal recordings.</p>
+    <p class="challenge-description atlas-text atlas-text-desc bold"> Glitch synths and instruments.</p>
+    <p class="challenge-description atlas-text atlas-text-desc bold">Remix your drums and invent new drum grooves.</p>
+    <p class="challenge-description atlas-text atlas-text-desc bold">Turn your entire song upside down and inside out.</p>
+</div>
+
+<div class="wavvy-hero-section mood-wrapper">
+    <h3 class="wavvy-title mood-text">Mood Board</h3>
+    <img src="../../assets/images/moodboard.png" class="mood-image">
+</div>
+
+<div class="wavvy-hero-section mood-wrapper">
+    <h3 class="wavvy-title mood-text">Features</h3>
+    <div class="features-container">
+        <div class="features-wrapper" *ngFor="let item of features">
+            <img src="../../assets/images/check.svg" class="feature-image">
+            <p class="feature-text">{{item.text}}</p>
+        </div>
+    </div>
+</div>
+
+<div class="insights-container testimonial-container">
+    <h3 class="wavvy-title testimonial-text">Product Testimonials</h3>
+    <div class="testimonial-image-wrapper">
+        <img class = "testimonial-image testimonial1" src="../../assets/images/t1.png">
+        <img class = "testimonial-image testimonial2" src="../../assets/images/t2.png">
+        <img class = "testimonial-image testimonial3" src="../../assets/images/t3.png">
+        <img class = "testimonial-image testimonial4" src="../../assets/images/t4.png">
+        <img class = "testimonial-image testimonial5" src="../../assets/images/t5.png">
+    </div>
+</div>
+
+<div class="prototype">
+    <h3 class="prototype-text">High Fidelity Prototype Design</h3>
+    <lib-carousel id="dynamo"
+      [sliderItems]="dynamoCarousel" 
+      [sliderOptions]="dynamoOptions"
+      [slidesToShow] = 1
+      [autoSlide]="false"
+      [slideInterval]="4000">
+    </lib-carousel>
+</div>
+
+<div>
+    <p class="visual-concept-item title useful-link">Useful Links</p>
+    <div class="useful">
+        <div class="useful-wrapper" *ngFor="let item of useful">
+            <a href="{{item.link}}" target="_blank"><img src="{{item.image}}" alt="" width="80%" class="useful-image" loading="lazy"></a>
+            <p class="useful-sub-text">{{item.subtext}}</p>
+            <p class="useful-text">{{item.text}}</p>
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>

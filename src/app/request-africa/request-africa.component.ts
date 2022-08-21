@@ -82,7 +82,7 @@ export class RequestAfricaComponent implements OnInit {
   ]
 
   useful: any[]=[
-    {image: "../../assets/images/qr-request.svg", link:"https://www.pexels.com/@maryannkariuki/", subtext: "Web Dashboard", text: "Request Africa"},
+    {image: "../../assets/images/qr-request.svg", link:"http://dashboard.request.africa/", subtext: "Web Dashboard", text: "Request Africa"},
   ]
 
   partnersOptions = ['id', 'img', 'alt', 'class', 'link'];

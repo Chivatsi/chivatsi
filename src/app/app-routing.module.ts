@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { OnekanaComponent } from './onekana/onekana.component';
 import { RequestAfricaComponent } from './request-africa/request-africa.component';
 import { SfaComponent } from './sfa/sfa.component';
+import { UjamComponent } from './ujam/ujam.component';
 import { WavvyWalletComponent } from './wavvy-wallet/wavvy-wallet.component';
 
 const routes: Routes = [
@@ -18,6 +19,7 @@ const routes: Routes = [
   {path: 'about', component: AboutComponent},
   {path: 'contact', component: ContactComponent},
   {path: 'request-africa', component: RequestAfricaComponent},
+  {path: 'ujam', component: UjamComponent},
   { path: '',   redirectTo: '/chivatsi', pathMatch: 'full' }, 
 ];
 

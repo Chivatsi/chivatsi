@@ -34,6 +34,7 @@ body {
     --color-text-gold: #fdad00;
     --color-text-orange: #ff5851;
     --color-text-blue: #3a499f;
+    --color-text-dynamo: #27a1ac;    ;
     --color-text-onekana: #2e87c5;
     --color-line: #707070;
     --color-body: #fafafa;
@@ -212,6 +213,22 @@ body {
     }
 }
 
+#dynamo {
+
+    .carousel-container {
+        animation: imageTransform 4s infinite normal;
+        animation-timing-function: ease-in-out;
+        animation-delay: 0s;
+    }
+
+    .image {
+        .slider-img {
+            width: 80%;
+            margin-left: 80px;
+        }
+    }
+}
+
 // Responsive Mobile View
 
 @media only screen and (min-device-width: 300px) and (max-device-width: 600px) {
@@ -273,7 +290,7 @@ body {
         margin-left: 40px !important;
     }
 
-    #web, #member {
+    #web, #member, #dynamo {
       .carousel-container {
         grid-auto-columns: auto;
       }
@@ -281,6 +298,16 @@ body {
       .item-active {
         padding-left: 0px;
       }
+    }
+
+    #dynamo {
+        .image {
+            .slider-img {
+                width: 100%;
+                max-width: 100%;
+                margin-left: 0px;
+            }
+        }
     }
 }
 

@@ -14,6 +14,7 @@ import { AllyFreshComponent } from './ally-fresh/ally-fresh.component';
 import { UpdateComponent } from './shared/update/update.component';
 import { SfaComponent } from './sfa/sfa.component';
 import { RequestAfricaComponent } from './request-africa/request-africa.component';
+import { UjamComponent } from './ujam/ujam.component';
 // import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
@@ -29,7 +30,8 @@ import { RequestAfricaComponent } from './request-africa/request-africa.componen
     AllyFreshComponent,
     UpdateComponent,
     SfaComponent,
-    RequestAfricaComponent
+    RequestAfricaComponent,
+    UjamComponent
   ],
   imports: [
     BrowserModule,
